@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Mi Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="nav">
+          <div class="logo">Luis Aramayo</div>
+          <div>
+            <ul class="nav-links">
+              <li>
+                <a href="#sobremi">Sobre mi</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav id="hamburguer-nav">
+            <div class="logo">Luis Aramayo</div>
+            <div class="hamburguer-menu">
+                <div class="hamburguer-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li>
+                        <a href="#sobremi" onclick="toggleMenu()">Sobre mi</a>
+                        <a href="#experiencia" onclick="toggleMenu()">Experiencia</a>
+                        <a href="#proyectos" onclick="toggleMenu()">Proyectos</a>
+                        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+                      </li>
+                </div>
+            </div>         
+        </nav>
+
+        <div class="header-text">
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
