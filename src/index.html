@@ -8,48 +8,39 @@
     <title>Mi Portfolio</title>
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <nav id="nav">
-          <div class="logo">Luis Aramayo</div>
-          <div>
-            <ul class="nav-links">
-              <li>
-                <a href="#sobremi">Sobre mi</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <nav id="hamburguer-nav">
-            <div class="logo">Luis Aramayo</div>
-            <div class="hamburguer-menu">
-                <div class="hamburguer-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li>
-                        <a href="#sobremi" onclick="toggleMenu()">Sobre mi</a>
-                        <a href="#experiencia" onclick="toggleMenu()">Experiencia</a>
-                        <a href="#proyectos" onclick="toggleMenu()">Proyectos</a>
-                        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
-                      </li>
-                </div>
-            </div>         
-        </nav>
-
-        <div class="header-text">
-          
+    <nav id="desktop-nav">
+      <div class="logo">Luis Aramayo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#sobremi">Sobre mi</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburguer-nav">
+      <div class="logo">Luis A.</div>
+      <div class="hamburguer-menu">
+        <div class="hamburguer-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#sobremi" onclick="toggleMenu()">Sobre mi</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
         </div>
       </div>
-    </div>
+    </nav>
 
+    <section id="profile">
+      <div class="pic-container">
+        <img src="" alt="">
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
