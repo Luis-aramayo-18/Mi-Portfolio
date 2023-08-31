@@ -141,3 +141,135 @@ a:hover {
 .hamburguer-icon span:first-child{
   transform: none;
 }
+
+/* -----------SECTION-------- */
+
+section{
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container{
+  display: flex;
+}
+
+/* ------PROFILE------- */
+
+#profile{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.pic-container{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section-text{
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p{
+  font-weight: 600;
+}
+
+.section-text-p{
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+
+.section-text-p2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-size: 4rem;
+  text-align: center;
+}
+
+#socials-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* --------ICONS------- */
+
+.icon{
+  cursor: pointer;
+  height: 2rem;
+}
+
+.icon-linkedin, .icon-github{
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.icon-linkedin:hover{
+  transform: translateY(-5px);
+  transform: scale(1.3);
+}
+
+.icon-github:hover{
+  transform: translateY(-5px);
+  transform: scale(1.3);
+}
+
+/* ----BUTTONS---- */
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn{
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-2, 
+.btn-color-1{
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2:hover, 
+.btn-color-1:hover{
+  cursor: pointer;
+}
+
+.btn-color-2, 
+.btn-color-1:hover{
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-2:hover{
+  background-color: black;
+}
+
+.btn-color-1{
+  background: none;
+}
+
+.btn-color-1:hover{
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container{
+  gap: 1rem;
+}

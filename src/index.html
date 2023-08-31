@@ -22,7 +22,9 @@
     <nav id="hamburguer-nav">
       <div class="logo">Luis A.</div>
       <div class="hamburguer-menu">
-        <div class="hamburguer-icon" onclick="toggleMenu()">
+        <div 
+        class="hamburguer-icon" 
+        onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -38,7 +40,42 @@
 
     <section id="profile">
       <div class="pic-container">
-        <img src="" alt="">
+        <img 
+        src="../assets/PXL_20230318_144749748.PORTRAIT-fotor-2023083113144.png" 
+        alt="Aramayo Luis foto de perfil">
+      </div>
+      <div class="section-text">
+        <p class="section-text-p">Hola !, soy</p>
+        <h1 class="title">Luis Aramayo</h1>
+        <p class="section-text-p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button 
+          class="btn btn-color-2" 
+          onclick="window.open('../assets/curriculumVitaeMe.pdf')"
+          >
+          Descargar CV
+          </button>
+          <button 
+          class="btn btn-color-1" 
+          onclick="location.href='./#contacto'"
+          >
+          Contacto inf
+          </button>
+        </div>
+        <div id="socials-container">
+          <img 
+          src="../assets/linkedin.png" 
+          alt="Mi linkedin perfil logo"
+          class="icon icon-linkedin"
+          onclick="window.open('https://www.linkedin.com/in/luis-aramayo-171055235/', '_blank')"
+          />
+          <img 
+          src="../assets/github.png" 
+          alt="Mi github perfil logo"
+          class="icon icon-github"
+          onclick="window.open('https://github.com/Luis-aramayo-18', '_blank')"
+          />
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
