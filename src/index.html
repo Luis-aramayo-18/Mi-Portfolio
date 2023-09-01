@@ -8,6 +8,8 @@
     <title>Mi Portfolio</title>
   </head>
   <body>
+
+    <header>
     <nav id="desktop-nav">
       <div class="logo">Luis Aramayo</div>
       <div>
@@ -37,7 +39,9 @@
         </div>
       </div>
     </nav>
+    </header>
 
+    <main>
     <section id="profile">
       <div class="pic-container">
         <img 
@@ -45,22 +49,23 @@
         alt="Aramayo Luis foto de perfil">
       </div>
       <div class="section-text">
-        <p class="section-text-p">Hola !, soy</p>
+        <p class="section-text-p">Hola, soy</p>
         <h1 class="title">Luis Aramayo</h1>
         <p class="section-text-p2">Frontend Developer</p>
         <div class="btn-container">
           <button 
           class="btn btn-color-2" 
-          onclick="window.open('../assets/curriculumVitaeMe.pdf')"
+          onclick="descargarCV()"
           >
           Descargar CV
           </button>
-          <button 
+          
+          <!-- <button 
           class="btn btn-color-1" 
           onclick="location.href='./#contacto'"
           >
           Contacto inf
-          </button>
+          </button> -->
         </div>
         <div id="socials-container">
           <img 
@@ -78,6 +83,40 @@
         </div>
       </div>
     </section>
+    <section id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="../assets/book82.jpg" alt="">
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">Sobre mi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('educacion')">Educacion</p>
+              <p class="tab-links" onclick="openTab('experiencia')">Experiencia</p>
+            </div>
+            <div class="tab-content active-tab" id="educacion">
+              <ul>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experiencia">
+              <ul>
+                <li><span>UI?UX</span><br>Desingning web/app pepe</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
