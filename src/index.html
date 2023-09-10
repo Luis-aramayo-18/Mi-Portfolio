@@ -338,29 +338,47 @@
       <div class="projects-container">
       <div class="div-text-proyects">
         <p>mis</p>
-        <h1 class="tilte-projects">Proyectos</h1>
+        <h1 class="tilte-projects">
+          Proyectos
+        </h1>
         <p>si puedes imaginarlo puedes programarlo.</p>
       </div>
       <div class="row-proyects">
         <div class="proyect-col-1">
-          <img class="proyect-img" src="../assets/663728.jpg" alt="">
+          <img class="proyect-img" 
+               src="../assets/663728.jpg" 
+               alt="imagen-de-proyecto">
           <div class="layer">
             <h3>Eccommerse-Electronica</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt quis dicta autem sint eveniet delectus ullam officia ipsum facere.</p>
             <div class="container-icon">
-              <a target="_blank" href="https://tecno-store-eccommerse-app.netlify.app/"><i class='icon-proyect bx bx-link-external'></i></a>
-              <a target="_blank" href="https://github.com/Luis-aramayo-18/ecommerse-electronica"><i class='icon-proyect bx bxl-github'></i></a>
+              <a target="_blank" 
+                 href="https://tecno-store-eccommerse-app.netlify.app/">
+                  <i class='icon-proyect bx bx-link-external'></i>
+              </a>
+              <a target="_blank" 
+                 href="https://github.com/Luis-aramayo-18/ecommerse-electronica">
+                <i class='icon-proyect bx bxl-github'></i>
+              </a>
               </div>
           </div>
         </div>
         <div class="proyect-col-2">
-          <img class="proyect-img" src="../assets/0HXb0UR0v_2000x1500__1.jpg" alt="">
+          <img class="proyect-img" 
+               src="../assets/0HXb0UR0v_2000x1500__1.jpg" 
+               alt="">
           <div class="layer">
             <h3>Rolling-Food</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt quis dicta autem sint eveniet delectus ullam officia ipsum facere.</p>
             <div class="container-icon">
-            <a target="_blank" href="https://devsfood-rolling.netlify.app/"><i class='icon-proyect bx bx-link-external'></i></a>
-            <a target="_blank" href="https://github.com/Luis-aramayo-18/Rolling-Restaurant"><i class='icon-proyect bx bxl-github'></i></a>
+            <a target="_blank" 
+               href="https://devsfood-rolling.netlify.app/">
+              <i class='icon-proyect bx bx-link-external'></i>
+            </a>
+            <a target="_blank" 
+               href="https://github.com/Luis-aramayo-18/Rolling-Restaurant">
+              <i class='icon-proyect bx bxl-github'></i>
+            </a>
             </div>
           </div>
         </div>
@@ -379,58 +397,94 @@
           <div class="card">
             <i class='icon-services bx bx-laptop'></i>
             <h2>Desarrollo <br>Web</h2>
-            <p onclick="openModal()">ver mas</p>
+            <p onclick="openModal('desarrollo-web')" 
+               data-modal-target="desarrollo-web">
+               ver mas
+            </p>
 
-            <div class="modal">
+            <div class="modal desarrollo-web">
             <div class="card-content">
-              <i onclick="closeModale()" class='close bx bx-x'></i>
-              <h3>Ayudo a crecer la marca de tu empresa</h3>
-              <p>Diseño personalizado</p>
-              <p>Integracion de redes sociales</p>
-              <p>Optimización de Velocidad</p>
-              <p>Compatibilidad Multilingüe</p>
-              <p>Branding y Posicionamiento</p>
+              <i onclick="closeModal()" 
+                 class='close bx bx-x'>
+              </i>
+              <div class="modal-content-text">
+              <h3 class="modal-title"></h3>
+              <p class="modal-content-1"></p>
+              <p class="modal-content-2"></p>
+              <p class="modal-content-3"></p>
+              <p class="modal-content-4"></p>
+              <p class="modal-content-5"></p>
+            </div>
             </div>
           </div>
           </div>
           <div class="card">
-            <i class='icon-services bx bxs-layout' ></i>
+            <i class='icon-services bx bxs-layout'></i>
             <h2>Diseño <br>UI/UX</h2>
-            <p>ver mas</p>
+            <p data-modal-target="diseño-ui-ux" 
+               onclick="openModal('diseño-ui-ux')">
+               ver mas
+            </p>
 
-            <div class="modal">
-            <div class="card-content">
-              <h3>Cuanto mejor es la experiencias <br> mas compras</h3>
-              <p>Experiencia de usuario intuitiva</p>
-              <p>Diseño Responsivo</p>
-              <p>Estilo minimalista</p>
-              <p>componentes interactivo para el usuario</p>
-              <p>Accesibilidad Web</p>
+            <div class="modal diseño-ui-ux">
+              <div class="card-content">
+                <i onclick="closeModal()" 
+                   class='close bx bx-x'>
+                </i>
+                <div class="modal-content-text">
+                  <h3 class="modal-title"></h3>
+                  <p class="modal-content-1"></p>
+                  <p class="modal-content-2"></p>
+                  <p class="modal-content-3"></p>
+                  <p class="modal-content-4"></p>
+                  <p class="modal-content-5"></p>
+                </div>
+              </div>
             </div>
-          </div>
           </div>
           <div class="card">
             <i class='icon-services bx bxs-cart'></i>
             <h2>Desarrollo <br>E-ccommerse</h2>
-            <p>ver mas</p>
+            <p onclick="openModal('desarrollo-eccommerse')" 
+               data-modal-target="desarrollo-eccommerse">
+               ver mas
+            </p>
 
-            <div class="modal">
-            <div class="card-content">
-              <h3>Quieres crecer tu negocio?</h3>
-              <p>Experiencia de Compra Intuitiva</p>
-              <p>Personalización de Productos</p>
-              <p>Seguridad y Confianza</p>
-              <p>Reseñas y Calificaciones de Clientes</p>
-              <p>Mantenimiento Continuo</p>
-              <p>Escalabilidad</p>
+            <div class="modal desarrollo-eccommerse">
+              <div class="card-content">
+                <i onclick="closeModal()" 
+                   class='close bx bx-x'>
+                </i>
+                <div class="modal-content-text">
+                  <h3 class="modal-title"></h3>
+                  <div class="container-check">
+                    <p class="modal-content-1"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-2"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-3"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-4"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-5"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
     </section>
     <section id="contact">
-      <h1>Contactame</h1>
       <div class="row-contact">
       <div class="contact-col-1">
         <div class="container-contact-inf">
@@ -457,11 +511,15 @@
           </div>
           <div class="inf-contact">
             <h4>Localidad</h4>
-            <p>Argentina-Tucuman <br> Av.Gobernador Del Campo <br> #1500</p>
+            <p>Argentina-Tucuman 
+              <br> Av.Gobernador Del Campo 
+              <br> #1500
+            </p>
           </div>
         </div>
       </div>
       <div class="contact-col-2">
+        <h1 class="title-contact">Contactame</h1>
       <form class="form-contact">
           <div class="container-form-1">
           <input type="text" placeholder="Nombre Completo">
@@ -471,13 +529,6 @@
           <textarea name="" class="text-area-contact" placeholder="Mensaje"></textarea>
           <button class="btn-contact" type="submit">Enviar</button>
       </form>
-      <div class="contact-flayer">
-        <div class="container-text-flayer">
-        <h2>Tienes un negocio ?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, vel.</p>
-      </div>
-        <img class="img-flayer" src="../assets/0HXb0UR0v_2000x1500__1.jpg" alt="">
-      </div>
       </div>
       </div>
     </section>

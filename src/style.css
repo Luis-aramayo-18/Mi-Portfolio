@@ -7,7 +7,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  
 }
 
 
@@ -143,32 +142,19 @@ p {
 
 /* -------------------------PROFILE------------------- */
 
-#profile{
+#profile {
+  background-image: url(../assets/fondo-tecnologico-puntos-conexion-lineas-textura-placa-circuito.jpg), none;
+  background-size: cover, auto;
+  background-repeat: no-repeat;
+  background-position: center center, initial;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding-bottom: 4vh;
+  z-index: 1;
 
   position: relative;
-}
-
-#profile::before{
-  content: '';
-  background-image: url(../assets/fondo-tecnologico-puntos-conexion-lineas-textura-placa-circuito.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  filter: blur(2px);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  z-index: -1;
 }
 
 .profile-container{
@@ -180,6 +166,8 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.711);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
   margin-top: 2rem;
+
+  backdrop-filter: blur(2px);
 }
 
 .pic-container{
@@ -742,7 +730,6 @@ article{
 
 .card-content{
   border-radius: 10px;
-  text-align: center;
   background-color: #ffffffcc;
   position: relative;
   z-index: 10;
@@ -753,6 +740,22 @@ article{
   padding: 20px;
 
   cursor: default;
+}
+
+.modal-content-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  gap: 0.5rem;
+}
+
+.container-check{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .close{
@@ -771,20 +774,28 @@ article{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+
+  margin: 0 15rem;
 }
 
 .row-contact{
   display: flex;
   justify-content: center;
-
-  margin-top: 2rem;
-  gap: 2rem;
+  width: 100%;
+  gap: 4rem;
 }
 
 .contact-col-2{
-  width: 55%;
+  border: 1px solid rgba(255, 255, 255, 0.711);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
+  padding: 3rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-contact{
@@ -822,14 +833,12 @@ article{
 .text-area-contact{
   resize: none;
   height: 150px;
-  border-radius: 10px;
   width: 100%;
-  padding-left: 10px;
+  width: 100%;
 }
 
 .text-area-contact::placeholder{
   font-size: 16px;
-  padding-left: 10px;
   padding-top: 10px;
 }
 
@@ -841,13 +850,10 @@ article{
 input{
   height: 50px;
   width: 100%;
-  border-radius: 10px;
-  padding-left: 10px;
 }
 
 input::placeholder {
   font-size: 16px;
-  padding-left: 10px;
 }
 
 .btn-contact{
@@ -858,25 +864,10 @@ input::placeholder {
   cursor: pointer;
 }
 
-.contact-flayer{
-  background-color: #4caf50;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-top: 3rem;
-  border-radius: 10px;
-  padding: 20px 10px;
-}
+.title-contact{
+  font-size: 2rem;
+  font-weight: 400;
 
-.img-flayer{
-  width: 30%;
-}
-
-.div-img-flayer{
-  display: flex;
-  justify-content: end;
-}
-
-.container-text-flayer{
-  text-align: start;
+  text-align: center;
+  margin-bottom: 1rem;
 }
