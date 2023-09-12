@@ -735,7 +735,7 @@ article{
 .services-title{
   font-size: 2rem;
   font-weight: 400;
-  color: #9d4edd;
+  color: white;
 }
 
 .container-card{
@@ -758,6 +758,14 @@ article{
   height: 340px;
   
   transition: transform 0.4s;
+}
+
+.card h2{
+  color: #9d4edd;
+}
+
+.card p{
+  color: white;
 }
 
 .card p:hover{
@@ -824,6 +832,7 @@ article{
 
 .icon-services{
   font-size: 2rem;
+  color: white;
 }
 
 /* -------------------------CONTACT------------------- */
@@ -849,13 +858,22 @@ article{
 .contact-col-1{
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  
+  padding: 2rem 0;
+}
+
+.contact-col-1 h4{
+  color: white;
+}
+
+.contact-col-1 p{
+  color: #b4b1b1;
 }
 
 .contact-col-2{
-  border: 1px solid rgba(255, 255, 255, 0.711);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
-  padding: 3rem;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0px 8px 12px #ff00fb;
+  padding: 3rem 2rem;
   width: 100%;
 
   display: flex;
@@ -881,6 +899,10 @@ article{
 
 .inf-contact{
   text-align: start;
+}
+
+.icon-contact{
+  color: #9d4edd;
 }
 
 .inf-contact h4{
@@ -937,4 +959,5 @@ input::placeholder {
 
   text-align: center;
   margin-bottom: 1.5rem;
+  color: white;
 }
