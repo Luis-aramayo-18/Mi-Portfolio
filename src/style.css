@@ -7,6 +7,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+
+  background-color: #10022b;
 }
 
 
@@ -51,7 +53,7 @@ p {
   content: '';
   width: 0%;
   height: 3px;
-  background: #ffffff;
+  background: #ff00fb;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -143,7 +145,7 @@ p {
 /* -------------------------PROFILE------------------- */
 
 #profile {
-  background-image: url(../assets/fondo-tecnologico-puntos-conexion-lineas-textura-placa-circuito.jpg), none;
+  background-image: url(../assets/pexels-karol-d-409701.jpg);
   background-size: cover, auto;
   background-repeat: no-repeat;
   background-position: center center, initial;
@@ -163,7 +165,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.711);
+  border: 1px solid rgb(255, 255, 255);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
   margin-top: 2rem;
 
@@ -196,6 +198,7 @@ p {
 
 .title{
   font-size: 4rem;
+  color: #9d4edd;
 }
 
 .socials-container{
@@ -270,9 +273,11 @@ p {
 
 .row{
   display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.711);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.875);
   padding: 20px;
+
+  
 }
 
 .about-col-1{
@@ -282,6 +287,8 @@ p {
 .title-aboutme{
   font-size: 2rem;
   font-weight: 400;
+
+  color: #ffffff;
 }
 
 .about-col-1 img{
@@ -293,6 +300,10 @@ p {
   flex-basis: 65%;
 }
 
+.about-col-2 p{
+  color: rgb(156, 156, 156);
+}
+
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
@@ -300,9 +311,9 @@ p {
 
 .tab-links{
 margin-right: 50px;
-font-size: 15px;
+font-size: 1rem;
 font-weight: bold;
-color: rgba(0, 0, 0, 0.853);
+color: #9d4edd;
 cursor: pointer;
 position: relative;
 }
@@ -311,7 +322,7 @@ position: relative;
   content: '';
   width: 0;
   height: 3px;
-  background: grey;
+  background: #ff00fb;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -323,12 +334,13 @@ position: relative;
 }
 
 .tab-content ul li{
+  color: white;
   list-style: none;
   margin: 10px 0;
 }
 
 .tab-content ul li span{
-  color: goldenrod;
+  color: #9d4edd;
   font-size: 15px;
 }
 
@@ -356,6 +368,10 @@ position: relative;
   margin-bottom: 2rem;
 }
 
+.div-text-experience p{
+  color: rgb(156, 156, 156);
+}
+
 .row-skills{
   display: flex;
   justify-content: space-between;
@@ -365,6 +381,8 @@ position: relative;
 .title-skills{
   font-size: 2rem;
   font-weight: 400;
+
+  color: white;
 }
 
 .skills-col-1{
@@ -407,13 +425,13 @@ position: relative;
 .skills-col-1, 
 .skills-col-2, 
 .skills-col-3{
-  border: 1px solid rgba(255, 255, 255, 0.711);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.875);
   padding: 20px;
 }
 
 .skills-subtitle{
-  color: rgb(85, 85, 85);
+  color: rgb(156, 156, 156);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -435,6 +453,8 @@ position: relative;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  color: white;
 }
 
 .skill-progress{
@@ -449,7 +469,7 @@ position: relative;
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-color: #f06529;
+  background-color: #ff00fb;
   transition: width 1.5s ease-in-out;
 
   position: static;
@@ -523,7 +543,7 @@ position: relative;
 
 .progress-ring-circle {
   fill: transparent;
-  stroke: #f06529;
+  stroke: #ff00fb;
   stroke-width: 5;
   stroke-dasharray: 314;
   stroke-dashoffset: 157;
@@ -543,11 +563,13 @@ position: relative;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: 300;
-  color: black;
+  color: white;
 }
 
 .skill-ring-name{
   font-size: 13px;
+
+  color: white;
 }
 
 article{
@@ -570,18 +592,24 @@ article{
 }
 
 .projects-container{
-  border: 1px solid rgba(255, 255, 255, 0.711);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
-  padding: 20px 40px;
+  /* border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.875);
+  padding: 20px 40px; */
 }
 
 .div-text-proyects{
   margin-bottom: 2rem;
 }
 
+.div-text-proyects p {
+  color: rgb(156, 156, 156);
+}
+
 .tilte-projects{
   font-size: 2rem;
   font-weight: 400;
+
+  color: white;
 }
 
 .row-proyects{
@@ -595,21 +623,41 @@ article{
   height: auto;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(152, 144, 144, 0.711);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.875);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
 }
 
 .proyect-img{
-  width: 100%;
-  height: 100%;
+ 
+ 
   display: block;
   transition: transform 0.5s;
+  position: relative;
+
+  width: 100%;
+  
+  height: 400px;
+  object-fit: cover;
+}
+
+.proyect-img-2{
+  width: 220px;
+  height: 420px;
+
+  display: none;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.image-container {
+  position: relative;
 }
 
 .layer{
   height: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), #ff004f);
-  border-radius: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.518), #ff00fb);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -622,6 +670,10 @@ article{
   text-align: center;
 
   transition: height 0.5s;
+}
+
+.layer p{
+  color: white;
 }
 
 .icon-proyect{
@@ -644,6 +696,7 @@ article{
 .proyect-col-1:hover .layer{
   height: 100%;
 }
+
 
 .proyect-col-2:hover img{
   transform: scale(1.1);
@@ -675,9 +728,14 @@ article{
   margin-bottom: 2rem;
 }
 
+.services-header p{
+  color: rgb(156, 156, 156)
+}
+
 .services-title{
   font-size: 2rem;
   font-weight: 400;
+  color: #9d4edd;
 }
 
 .container-card{
@@ -693,8 +751,8 @@ article{
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.711);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.875);
   padding: 0 20px;
   width: 200px;
   height: 340px;
@@ -787,6 +845,13 @@ article{
   gap: 4rem;
 }
 
+
+.contact-col-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .contact-col-2{
   border: 1px solid rgba(255, 255, 255, 0.711);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
@@ -862,6 +927,8 @@ input::placeholder {
   font-size: 15px;
   border-radius: 10px;
   cursor: pointer;
+
+  margin-top: 1.5rem;
 }
 
 .title-contact{
@@ -869,5 +936,5 @@ input::placeholder {
   font-weight: 400;
 
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
