@@ -215,3 +215,25 @@ function openTab(tabName) {
     navBar.style.display = 'flex'
     body.style.overflow = ''
   }
+
+  ScrollReveal({
+    resizeTo: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('.row, .title-section, .container-text, .profile-container', {origin : 'top'});
+  ScrollReveal().reveal('.row-skills, .row-proyects, .container-card', {origin : 'bottom'});
+  ScrollReveal().reveal('.container-inf', {origin : 'left'});
+  ScrollReveal().reveal('.contact-col-2', {origin : 'right'});
+
+  function arrowUp() {
+    const profile = document.querySelector('#profile');
+  
+    if (profile) {
+      profile.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }

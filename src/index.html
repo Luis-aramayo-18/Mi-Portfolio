@@ -103,9 +103,9 @@
         </div>
     </section>
     <section id="skills">
-      <div class="div-text-experience">
+      <div class="container-text">
         <p>mis</p>
-        <h1 class="title-skills">Habilidades</h1>
+        <h1 class="title-section">Habilidades</h1>
         <p>con tecnologias</p>
       </div>
       <div class="row-skills">
@@ -336,9 +336,9 @@
     </section>
     <section id="proyects">
       <div class="projects-container">
-      <div class="div-text-proyects">
+      <div class="container-text">
         <p>mis</p>
-        <h1 class="tilte-projects">
+        <h1 class="title-section">
           Proyectos
         </h1>
         <p>si puedes imaginarlo puedes programarlo.</p>
@@ -405,9 +405,9 @@
     </section>
     <section id="services">
       <div class="services-container">
-        <div class="services-header">
+        <div class="container-text">
           <p>estos son los</p>
-          <h1 class="services-title">Serivicios</h1>
+          <h1 class="title-section">Serivicios</h1>
           <p>que ofrezco
           </p>
         </div>
@@ -505,6 +505,8 @@
     <section id="contact">
       <div class="row-contact">
       <div class="contact-col-1">
+        <h1 class="title-section">Contactame</h1>
+        <div class="container-inf">
         <div class="container-contact-inf">
           <div class="icont-inf">
             <i class='icon-contact bx bxs-phone-incoming'></i>
@@ -536,22 +538,46 @@
           </div>
         </div>
       </div>
+      </div>
+      
       <div class="contact-col-2">
-        <h1 class="title-contact">Contactame</h1>
-      <form class="form-contact">
+        
+      <form 
+      class="form-contact"
+      action="https://formsubmit.co/0de91bc07760e016315061f706fcd63f" method="POST">
           <div class="container-form-1">
-          <input type="text" placeholder="Nombre Completo">
-          <input type="Email" placeholder="Email">
+          <input type="text" 
+          name="nombre" 
+          placeholder="Nombre Completo">
+          <input type="Email" 
+          name="email" 
+          placeholder="Email">
           </div>
-          <input type="text" placeholder="Asunto">
-          <textarea name="" class="text-area-contact" placeholder="Mensaje"></textarea>
-          <button class="btn-contact" type="submit">Enviar</button>
+          <input type="text" 
+          name="asunto" 
+          placeholder="Asunto">
+          <textarea name="mensaje" 
+          class="text-area-contact" 
+          placeholder="Mensaje">
+          </textarea>
+          <button class="btn-contact" 
+          type="submit">
+          Enviar
+          </button>
+
+          <input type="hidden" name="text" value="http://127.0.0.1:5500/">
+          <input type="hidden" name="_captcha" value="false">
       </form>
       </div>
       </div>
     </section>
+
+    <div class="arrow-up">
+      <i onclick="arrowUp()" class='bx bxs-up-arrow-square'></i>
+    </div>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>

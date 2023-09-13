@@ -285,7 +285,7 @@ p {
 }
 
 .title-aboutme{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
 
   color: #ffffff;
@@ -363,12 +363,12 @@ position: relative;
   /* justify-content: center; */
 }
 
-.div-text-experience{
+.container-text{
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.div-text-experience p{
+.container-text p{
   color: rgb(156, 156, 156);
 }
 
@@ -378,7 +378,7 @@ position: relative;
   margin-bottom: 2rem;
 }
 
-.title-skills{
+.title-section{
   font-size: 2rem;
   font-weight: 400;
 
@@ -591,17 +591,12 @@ article{
   text-align: center;
 }
 
-.projects-container{
-  /* border: 1px solid rgb(255, 255, 255);
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.875);
-  padding: 20px 40px; */
-}
 
-.div-text-proyects{
+.container-text{
   margin-bottom: 2rem;
 }
 
-.div-text-proyects p {
+.container-text p {
   color: rgb(156, 156, 156);
 }
 
@@ -724,15 +719,15 @@ article{
   text-align: center;
 }
 
-.services-header{
+.container-text{
   margin-bottom: 2rem;
 }
 
-.services-header p{
+.container-text p{
   color: rgb(156, 156, 156)
 }
 
-.services-title{
+.title-section{
   font-size: 2rem;
   font-weight: 400;
   color: white;
@@ -794,9 +789,13 @@ article{
   z-index: 1;
 }
 
+.modal-title{
+  color: #9d4edd;
+}
+
 .card-content{
   border-radius: 10px;
-  background-color: #ffffffcc;
+  background-color: #10022b;
   position: relative;
   z-index: 10;
   top: 50%;
@@ -845,6 +844,8 @@ article{
   justify-content: center;
 
   margin: 0 15rem;
+
+  position: relative;
 }
 
 .row-contact{
@@ -922,11 +923,16 @@ article{
   height: 150px;
   width: 100%;
   width: 100%;
+
+  color: white;
+  background-color: transparent;
 }
 
 .text-area-contact::placeholder{
   font-size: 16px;
-  padding-top: 10px;
+  padding: 10px;
+
+  color: rgba(255, 255, 255, 0.789);
 }
 
 .container-form-1{
@@ -937,27 +943,56 @@ article{
 input{
   height: 50px;
   width: 100%;
+
+  color: white;
+  background-color: transparent;
 }
 
 input::placeholder {
   font-size: 16px;
+  padding: 10px;
+
+  color: rgba(255, 255, 255, 0.781);
 }
 
 .btn-contact{
-  width: 30%;
+  width: 25%;
   padding: 15px;
   font-size: 15px;
-  border-radius: 10px;
   cursor: pointer;
 
+  background-color: transparent;
   margin-top: 1.5rem;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+
+  transition: transform 0.4s;
 }
 
-.title-contact{
-  font-size: 2rem;
+.btn-contact:hover{
+  box-shadow: 0px 4px 8px #ffffff;
+  transform: scale(1.07);
+}
+
+.title-section{
+  font-size: 3rem;
   font-weight: 400;
 
   text-align: center;
   margin-bottom: 1.5rem;
+  color: white;
+}
+
+.arrow-up{
+  position: relative;
+}
+
+.arrow-up i{
+  font-size: 3rem;
+  position: absolute; /* Utiliza posición absoluta */
+  bottom: 10px;       /* Ajusta la distancia desde la parte inferior */
+  right: 30px;        /* Ajusta la distancia desde la derecha */
+  z-index: 5;   
+  cursor: pointer;
   color: white;
 }
