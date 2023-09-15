@@ -171,7 +171,7 @@ function openTab(tabName) {
 
     if(modalData){
       const body = document.body
-      const modal = document.querySelector(`.modal.${modalId}`);
+      const modal = document.querySelector(`.modal`);
       const cardsToStopTransform = document.querySelectorAll('.card')
       const navBar = document.querySelector('#desktop-nav')
       const modalTitle = modal.querySelector('.modal-title');

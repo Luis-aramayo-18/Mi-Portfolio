@@ -853,6 +853,10 @@ article{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(2px);
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
 }
 
 .modal-title{
@@ -863,7 +867,6 @@ article{
   border-radius: 10px;
   background-color: var(--backgorund-modal-services);
   position: relative;
-  z-index: 10;
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
@@ -871,6 +874,7 @@ article{
   padding: 20px;
 
   cursor: default;
+  z-index: 999;
 }
 
 .modal-content-text{
