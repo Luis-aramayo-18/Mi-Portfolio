@@ -270,7 +270,12 @@ document.getElementById('form')
   const darkTheme = document.querySelector('.dark-mode')
 
   darkTheme.onclick = function (){
-
-    console.log('gola')
     document.body.classList.toggle('dark-theme');
+    // const profile = document.querySelector('#about-me');
+
+    // if (profile) {
+    //   profile.scrollIntoView({
+    //     behavior: 'smooth'
+    //   });
+    // }
   }
