@@ -215,3 +215,25 @@ function openTab(tabName) {
     navBar.style.display = 'flex'
     body.style.overflow = ''
   }
+
+  ScrollReveal({
+    resizeTo: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('', {origin : 'top'});
+  ScrollReveal().reveal('', {origin : 'bottom'});
+  ScrollReveal().reveal('', {origin : 'left'});
+  ScrollReveal().reveal('', {origin : 'right'});
+
+  function arrowUp() {
+    const profile = document.querySelector('#profile');
+  
+    if (profile) {
+      profile.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }
