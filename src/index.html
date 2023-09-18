@@ -60,9 +60,9 @@
       </div>
       <div class="section-text">
         <p class="section-text-p">Hola, soy</p>
-        <h1 class="title">Luis Aramayo</h1>
+        <h1 class="title">Luis Aramayo.</h1>
         <p class="section-text-p2">Frontend Developer</p>
-        <button class="btn-cv" onclick="descargarCV()" type="button">DescargarCv</button>
+        <button class="btn-cv" onclick="descargarCV()" type="button">Descargar CV</button>
         <div class="socials-container">
           <a class="icon" target="_blank" href="https://www.linkedin.com/in/luis-aramayo-171055235/">
              <i class='icon-linkedin bx bxl-linkedin'></i>
@@ -352,7 +352,15 @@
                alt="imagen-de-proyecto">
           <div class="layer">
             <h3>Eccommerse-Electronica</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt quis dicta autem sint eveniet delectus ullam officia ipsum facere.</p>
+            <p>
+              Esta app nacio como una oportunidad laboral, para un cliente
+              cercano. Aun estoy trabajando en el con los estilos y
+              agregandoles algunas funcionalidades.
+            </p>
+            <p>
+              Se trata de un e-ccommerse de electronica con carrito de
+              compraas, y formulario de compra. Las tecnologias que use son
+            </p>
             <div class="container-icon">
               <a target="_blank" 
                  href="https://tecno-store-eccommerse-app.netlify.app/">
@@ -371,7 +379,18 @@
                alt="">
           <div class="layer">
             <h3>Rolling-Food</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt quis dicta autem sint eveniet delectus ullam officia ipsum facere.</p>
+            <p>
+              Es la app que desarrolle grupalmente, para presentar como
+              proyecto final del curso de RollingCode
+            </p>
+            <p>
+              Yo me encargue de hacer el back, conectarlo con el front y
+              agregar algunos estilos
+            </p>
+            <p>
+              Se trata de un app para un restaurant de comida rapida. Las
+              tecnologias que use son
+            </p>
             <div class="container-icon">
             <a target="_blank" 
                href="https://devsfood-rolling.netlify.app/">
@@ -488,68 +507,82 @@
     </section>
     <section id="contact">
       <div class="row-contact">
-      <div class="contact-col-1">
-        <div class="container-contact-inf">
-          <div class="icont-inf">
-            <i class='icon-contact bx bxs-phone-incoming'></i>
-          </div>
-          <div class="inf-contact">
-            <h4>Telefono</h4>
-            <p>+54 9 381 576-5255</p>
+        <div class="contact-col-1">
+          <div class="container-inf">
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-phone-incoming"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Telefono</h4>
+                <p>+54 9 381 576-5255</p>
+              </div>
+            </div>
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-envelope"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Email</h4>
+                <p>Luis.aramayo.18@gmail.com</p>
+              </div>
+            </div>
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-map"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Localidad</h4>
+                <p>
+                  Argentina-Tucuman <br />
+                  Av.Gobernador Del Campo <br />
+                  #1500
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container-contact-inf">
-          <div class="icont-inf">
-            <i class='icon-contact bx bxs-envelope'></i>
-          </div>
-          <div class="inf-contact">
-            <h4>Email</h4>
-            <p>Luis.aramayo.18@gmail.com</p>
-          </div>
-        </div>
-        <div class="container-contact-inf">
-          <div class="icont-inf">
-            <i class='icon-contact bx bxs-map'></i>
-          </div>
-          <div class="inf-contact">
-            <h4>Localidad</h4>
-            <p>Argentina-Tucuman 
-              <br> Av.Gobernador Del Campo 
-              <br> #1500
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="contact-col-2">
-        <h1 class="title-contact">Contactame</h1>
-        <form id="form" class="form-contact">
-          <div class="container-form-1">
-            <input
-              id="name"
-              type="text"
-              name="nombre"
-              placeholder="Nombre Completo"
+
+        <div class="contact-col-2">
+          <h1 class="title-contact">Contactame</h1>
+          <form id="form" class="form-contact">
+            <div class="container-form-1">
+              <input
+                id="name"
+                type="text"
+                name="nombre"
+                placeholder="Nombre Completo"
+                required
+              />
+              <input id="email" type="Email" name="email" placeholder="Email" required />
+            </div>
+            <input id="asunto" type="text" name="asunto" placeholder="Asunto" required />
+            <textarea
+              name="mensaje"
+              class="text-area-contact"
+              id="mensaje"
+              placeholder="Mensaje"
               required
+            >
+            </textarea>
+            <input
+              class="btn-contact"
+              type="submit"
+              id="button"
+              value="Enviar"
             />
-            <input id="email" type="Email" name="email" placeholder="Email" required />
-          </div>
-          <input id="asunto" type="text" name="asunto" placeholder="Asunto" required />
-          <textarea
-            name="mensaje"
-            class="text-area-contact"
-            id="mensaje"
-            placeholder="Mensaje"
-            required
-          >
-          </textarea>
-          <input
-            class="btn-contact"
-            type="submit"
-            id="button"
-            value="Enviar"
-          />
-        </form>
-      </div>
+            <span class="confirmation-mg">Mensaje enviado correctamente</span>
+          </form>
+
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          ></script>
+
+          <script type="text/javascript">
+            emailjs.init("tE59eCf1GscLLfKQo");
+          </script>
+        </div>
       </div>
     </section>
     <div class="arrow-up">

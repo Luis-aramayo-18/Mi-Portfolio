@@ -243,10 +243,21 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const asunto = document.getElementById('asunto');
 const mensaje = document.getElementById('mensaje');
+const confirmation = document.querySelector('.confirmation-mg')
 
 document.getElementById('form')
   .addEventListener('submit', function(event) {
     event.preventDefault();
+
+    function mostrarMensajeDeConfirmacion() {
+      const confirmation = document.querySelector('.confirmation-mg')
+      confirmation.style.display = 'block';
+  
+      // Ocultar el mensaje después de 3 segundos (3000 milisegundos)
+      setTimeout(function() {
+          confirmation.style.display = 'none';
+      }, 3000); // 3000 ms = 3 segundos
+  }
 
     btn.value = 'Enviando...';
 
@@ -256,11 +267,11 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Enviar';
-        alert('Mensaje enviado!');
-        name.value = ''
-        email.value = ''
-        asunto.value = ''
-        mensaje.value = ''
+        mostrarMensajeDeConfirmacion();
+        name.value = '';
+        email.value = '';
+        asunto.value = '';
+        mensaje.value = '';
       }, (err) => {
         btn.value = 'Enviar';
         alert(JSON.stringify(err));
