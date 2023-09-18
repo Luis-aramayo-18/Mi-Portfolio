@@ -24,6 +24,8 @@
           <li><a class="link-a-nav" href="#proyects">Proyectos</a></li>
           <li><a class="link-a-nav" href="#services">Servicios</a></li>
           <li><a class="link-a-nav" href="#contact">Contacto</a></li>
+          <li><i class='link-a-nav dark-mode bx bx-moon' ></i></li>
+          <li><i class='link-a-nav dark-mode bx bx-sun' ></i></li>
         </ul>
       </div>
     </nav>
@@ -346,7 +348,7 @@
       <div class="row-proyects">
         <div class="proyect-col-1">
           <img class="proyect-img" 
-               src="../assets/663728.jpg" 
+               src="../assets/2023-09-11 (10).png" 
                alt="imagen-de-proyecto">
           <div class="layer">
             <h3>Eccommerse-Electronica</h3>
@@ -365,7 +367,7 @@
         </div>
         <div class="proyect-col-2">
           <img class="proyect-img" 
-               src="../assets/0HXb0UR0v_2000x1500__1.jpg" 
+               src="../assets/2023-09-11 (11).png" 
                alt="">
           <div class="layer">
             <h3>Rolling-Food</h3>
@@ -520,15 +522,33 @@
       </div>
       <div class="contact-col-2">
         <h1 class="title-contact">Contactame</h1>
-      <form class="form-contact">
+        <form id="form" class="form-contact">
           <div class="container-form-1">
-          <input type="text" placeholder="Nombre Completo">
-          <input type="Email" placeholder="Email">
+            <input
+              id="name"
+              type="text"
+              name="nombre"
+              placeholder="Nombre Completo"
+              required
+            />
+            <input id="email" type="Email" name="email" placeholder="Email" required />
           </div>
-          <input type="text" placeholder="Asunto">
-          <textarea name="" class="text-area-contact" placeholder="Mensaje"></textarea>
-          <button class="btn-contact" type="submit">Enviar</button>
-      </form>
+          <input id="asunto" type="text" name="asunto" placeholder="Asunto" required />
+          <textarea
+            name="mensaje"
+            class="text-area-contact"
+            id="mensaje"
+            placeholder="Mensaje"
+            required
+          >
+          </textarea>
+          <input
+            class="btn-contact"
+            type="submit"
+            id="button"
+            value="Enviar"
+          />
+        </form>
       </div>
       </div>
     </section>

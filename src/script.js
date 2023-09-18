@@ -237,3 +237,45 @@ function openTab(tabName) {
       });
     }
   }
+
+const btn = document.getElementById('button');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const asunto = document.getElementById('asunto');
+const mensaje = document.getElementById('mensaje');
+
+document.getElementById('form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Enviando...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_wt79ny4';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Enviar';
+        alert('Mensaje enviado!');
+        name.value = ''
+        email.value = ''
+        asunto.value = ''
+        mensaje.value = ''
+      }, (err) => {
+        btn.value = 'Enviar';
+        alert(JSON.stringify(err));
+      });
+  });
+
+  const darkTheme = document.querySelector('.dark-mode')
+
+  darkTheme.onclick = function (){
+    document.body.classList.toggle('dark-theme');
+    // const profile = document.querySelector('#about-me');
+
+    // if (profile) {
+    //   profile.scrollIntoView({
+    //     behavior: 'smooth'
+    //   });
+    // }
+  }
