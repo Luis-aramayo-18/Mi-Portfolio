@@ -282,6 +282,7 @@ document.getElementById('form')
 
   darkTheme.onclick = function (){
     document.body.classList.toggle('dark-theme');
+    
     // const profile = document.querySelector('#about-me');
 
     // if (profile) {

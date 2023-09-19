@@ -241,7 +241,7 @@ p {
   background-image: url(../assets/pexels-pixabay-219692.jpg), none;
   background-size: cover, auto;
   background-repeat: no-repeat;
-  background-position: center bottom, initial;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
