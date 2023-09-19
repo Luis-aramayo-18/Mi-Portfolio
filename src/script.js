@@ -223,10 +223,10 @@ function openTab(tabName) {
     delay: 200
   });
 
-  ScrollReveal().reveal('', {origin : 'top'});
-  ScrollReveal().reveal('', {origin : 'bottom'});
-  ScrollReveal().reveal('', {origin : 'left'});
-  ScrollReveal().reveal('', {origin : 'right'});
+  ScrollReveal().reveal('.row, .div-text-experience, .div-text-proyects, .services-header', {origin : 'top'});
+  ScrollReveal().reveal('.row-skills, .row-proyects', {origin : 'bottom'});
+  ScrollReveal().reveal('.contact-col-1', {origin : 'left'});
+  ScrollReveal().reveal('.contact-col-2', {origin : 'right'});
 
   function arrowUp() {
     const profile = document.querySelector('#profile');
@@ -282,12 +282,4 @@ document.getElementById('form')
 
   darkTheme.onclick = function (){
     document.body.classList.toggle('dark-theme');
-    
-    // const profile = document.querySelector('#about-me');
-
-    // if (profile) {
-    //   profile.scrollIntoView({
-    //     behavior: 'smooth'
-    //   });
-    // }
   }
