@@ -7,13 +7,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
-
   background-color: var(--body-primary);
 }
 
 
 html {
   scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
 }
 
 :root{
@@ -104,14 +107,14 @@ html {
   --btn-contact: #000000;
 }
 
-
-/* -------------------------DESKTOP NAV------------------- */
-
 .dark-mode{
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
 }
+
+
+/* -------------------------DESKTOP NAV------------------- */
 
 #desktop-nav {
   position: fixed;
@@ -143,7 +146,7 @@ html {
   content: '';
   width: 0%;
   height: 3px;
-  background: #ff00fb;
+  background: #ffffff;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -235,10 +238,10 @@ html {
 /* -------------------------PROFILE------------------- */
 
 #profile {
-  background-image: url(../assets/pexels-karol-d-409701.jpg);
+  background-image: url(../assets/pexels-pixabay-219692.jpg), none;
   background-size: cover, auto;
   background-repeat: no-repeat;
-  background-position: center center, initial;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +259,7 @@ html {
   align-items: center;
   padding: 2rem;
   border: 1px solid var(--border);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.875);
+  box-shadow: 0px 4px 8px rgb(0, 0, 0);
   margin-top: 2rem;
 
   backdrop-filter: blur(2px);
@@ -314,9 +317,9 @@ html {
   gap: 0.5rem;
 }
 
-
 .icon{
   cursor: pointer;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -389,6 +392,7 @@ html {
   color: var(--text-about);
 }
 
+
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
@@ -396,7 +400,7 @@ html {
 
 .tab-links{
 margin-right: 50px;
-font-size: 1rem;
+font-size: 15px;
 font-weight: bold;
 color: var(--link-tab-about);
 cursor: pointer;
@@ -425,7 +429,6 @@ position: relative;
 
 .tab-content ul li{
   color: var(--title-about);
-  list-style: none;
   margin: 10px 0;
 }
 
@@ -445,22 +448,30 @@ position: relative;
   margin: 0 10rem;
 }
 
-.skills-container-text{
+.div-text-experience{
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.skills-container-text p{
+.div-text-experience p{
   color: var(--text-secondary-skills);
 }
 
-.row-skills{
+.carousel-container{
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.carousel{
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  transition: transform 0.5s ease;
 }
 
-.skills-title-section{
+.title-skills{
   font-size: 3rem;
   font-weight: 400;
 
@@ -470,6 +481,7 @@ position: relative;
 .skills-col-1, 
 .skills-col-2, 
 .skills-col-3{
+  flex: 1;
   border: 1px solid var(--border-card-skill);
   box-shadow: 0px 4px 8px var(--shadow-skill);
   padding: 20px;
@@ -485,7 +497,6 @@ position: relative;
 .skills-col-3:hover{
   transform: scale(1.1);
 }
-
 
 .skills-subtitle{
   color: var(--card-title-skill);
@@ -586,6 +597,7 @@ position: relative;
   height: 100px;
   background-color: transparent;
   border-radius: 50%;
+  position: absolute;
   top: 10px;
   left: 10px;
 }
@@ -648,19 +660,17 @@ article{
   text-align: center;
 }
 
-
-.proyects-container-text{
+.div-text-proyects{
   margin-bottom: 2rem;
 }
 
-.proyects-container-text p {
+.div-text-proyects p{
   color: var(--secondary-text-projects);
 }
 
-.title-projects{
+.tilte-projects{
   font-size: 3rem;
   font-weight: 400;
-
   color: var(--text-primary-projects);
 }
 
@@ -680,28 +690,11 @@ article{
 }
 
 .proyect-img{
-  display: block;
-  transition: transform 0.5s;
-  position: relative;
-
   width: 100%;
   height: 400px;
   object-fit: cover;
-}
-
-.proyect-img-2{
-  width: 220px;
-  height: 420px;
-
-  display: none;
-
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.image-container {
-  position: relative;
+  display: block;
+  transition: transform 0.5s;
 }
 
 .layer{
@@ -743,8 +736,6 @@ article{
   transform: scale(1.3);
 }
 
-
-
 .layer h3{
   font-weight: 500;
   margin-bottom: 1rem;
@@ -757,7 +748,6 @@ article{
 .proyect-col-1:hover .layer{
   height: 100%;
 }
-
 
 .proyect-col-2:hover img{
   transform: scale(1.1);
@@ -784,17 +774,14 @@ article{
   text-align: center;
 }
 
-.services-container-text{
+.services-header{
   margin-bottom: 2rem;
 }
 
-.services-container-text p{
-  color: var(--secondary-text-services);
-}
-
-.title-services{
+.services-title{
   font-size: 3rem;
   font-weight: 400;
+
   color: var(--primary-text-services);
 }
 
@@ -803,8 +790,6 @@ article{
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  background-color: transparent;
 }
 
 .card{
@@ -853,10 +838,7 @@ article{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(2px);
-  justify-content: center;
-  align-items: center;
-
-  z-index: 100;
+  z-index: 1;
 }
 
 .modal-title{
@@ -867,14 +849,14 @@ article{
   border-radius: 10px;
   background-color: var(--backgorund-modal-services);
   position: relative;
+  z-index: 10;
   top: 50%;
-  width: 50%;
+  width: 30%;
   transform: translateY(-50%);
   margin: 0 auto;
   padding: 20px;
 
   cursor: default;
-  z-index: 999;
 }
 
 .modal-content-text{
@@ -914,10 +896,8 @@ article{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  margin: 0 15rem;
-
   position: relative;
+  margin: 0 15rem;
 }
 
 .row-contact{
@@ -926,7 +906,6 @@ article{
   width: 100%;
   gap: 4rem;
 }
-
 
 .contact-col-1{
   display: flex;
@@ -938,7 +917,7 @@ article{
 .contact-col-2{
   border: 1px solid var(--border-contact);
   box-shadow: 0px 8px 12px var(--shadow-contact);
-  padding: 1rem 2rem;
+  padding: 3rem;
   width: 100%;
 
   display: flex;
@@ -966,10 +945,6 @@ article{
   text-align: start;
 }
 
-.icon-contact{
-  color: var(--icon-contact);
-}
-
 .inf-contact h4{
   font-size: 20px;
   color: var(--text-icon-contact);
@@ -982,6 +957,7 @@ article{
 
 .icon-contact{
   font-size: 2.5rem;
+  color: var(--icon-contact);
 }
 
 .text-area-contact{
@@ -989,6 +965,7 @@ article{
   height: 150px;
   width: 100%;
   width: 100%;
+
   border-color: black;
 
   color: var(--text-icon-contact);
@@ -997,7 +974,7 @@ article{
 
 .text-area-contact::placeholder{
   font-size: 16px;
-  padding: 10px;
+  padding-top: 10px;
 
   color: var(--text-secondary-contact);
 }
@@ -1010,6 +987,7 @@ article{
 input{
   height: 50px;
   width: 100%;
+
   border-color: black;
 
   color: var(--text-icon-contact);
@@ -1018,6 +996,7 @@ input{
 
 input::placeholder {
   font-size: 16px;
+
   padding: 10px;
 
   color: var(--text-secondary-contact);
@@ -1049,6 +1028,12 @@ input::placeholder {
   text-align: center;
   margin-bottom: 1.5rem;
   color: var(--title-contact);
+}
+
+.confirmation-mg{
+  color: #2cd10b;
+  font-size: 14px;
+  display: none;
 }
 
 .arrow-up{

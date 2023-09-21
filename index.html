@@ -4,141 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mediaqueries.css" />
     <title>Mi Portfolio</title>
   </head>
   <body>
+
     <header>
-      <nav id="desktop-nav">
-        <div class="btn-theme-language">
-          <!-- <button>Luna</button>
-        <button>Espaniol</button>
-        <i class='bx bx-menu'></i> -->
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a class="link-a-nav" href="#about-me">Sobre mi</a></li>
+          <li><a class="link-a-nav" href="#skills">Habilidades</a></li>
+          <li><a class="link-a-nav" href="#proyects">Proyectos</a></li>
+          <li><a class="link-a-nav" href="#services">Servicios</a></li>
+          <li><a class="link-a-nav" href="#contact">Contacto</a></li>
+          <li class="dark-mode"><i class='link-a-nav bx bx-moon'></i></li>
+        </ul>
+      </div>
+      <div class="hamburguer-icon">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+    <nav id="hamburguer-nav">
+      <div class="logo">Luis A.</div>
+      <div class="hamburguer-menu">
+        <div 
+        class="hamburguer-icon" 
+        onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div>
-          <ul class="nav-links">
-            <li><a class="link-a-nav" href="#about-me">Sobre mi</a></li>
-            <li><a class="link-a-nav" href="#skills">Habilidades</a></li>
-            <li><a class="link-a-nav" href="#proyects">Proyectos</a></li>
-            <li><a class="link-a-nav" href="#services">Servicios</a></li>
-            <li><a class="link-a-nav" href="#contact">Contacto</a></li>
-            <li><i class='link-a-nav dark-mode bx bx-moon' ></i></li>
-            <li><i class='link-a-nav dark-mode bx bx-sun' ></i></li>
-          </ul>
+        <div class="menu-links">
+          <li><a href="#sobremi" onclick="toggleMenu()">Sobre mi</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Habilidades</a></li>
+          <li><a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
         </div>
-      </nav>
-      <nav id="hamburguer-nav">
-        <div class="logo">Luis A.</div>
-        <div class="hamburguer-menu">
-          <div class="hamburguer-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#sobremi" onclick="toggleMenu()">Sobre mi</a></li>
-            <li>
-              <a href="#experiencia" onclick="toggleMenu()">Habilidades</a>
-            </li>
-            <li><a href="#proyectos" onclick="toggleMenu()">Proyectos</a></li>
-            <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
     </header>
 
     <main>
-      <section id="profile">
-        <div class="profile-container">
-          <div class="pic-container">
-            <img
-              class="img-profile"
-              src="../assets/PXL_20230318_144749748.PORTRAIT-fotor-2023083113144.png"
-              alt="Aramayo Luis foto de perfil"
-            />
-          </div>
-          <div class="section-text">
-            <p class="section-text-p">Hola, soy</p>
-            <h1 class="title">Luis Aramayo</h1>
-            <p class="section-text-p2">Frontend Developer</p>
-            <button class="btn-cv" onclick="descargarCV()" type="button">
-              DescargarCv
-            </button>
-            <div class="socials-container">
-              <a
-                class="icon"
-                target="_blank"
-                href="https://www.linkedin.com/in/luis-aramayo-171055235/"
-              >
-                <i class="icon-linkedin bx bxl-linkedin"></i>
-              </a>
-              <a
-                class="icon"
-                target="_blank"
-                href="https://github.com/Luis-aramayo-18"
-              >
-                <i class="icon-github bx bxl-github"></i>
-              </a>
-            </div>
-          </div>
+    <section id="profile">
+    <div class="profile-container">
+      <div class="pic-container">
+        <img 
+        class="img-profile"
+        src="../assets/PXL_20230318_144749748.PORTRAIT-fotor-2023083113144.png" 
+        alt="Aramayo Luis foto de perfil">
+      </div>
+      <div class="section-text">
+        <p class="section-text-p">Hola, soy</p>
+        <h1 class="title">Luis Aramayo</h1>
+        <p class="section-text-p2">Frontend developer</p>
+        <button class="btn-cv" onclick="descargarCV()" type="button">Descargar CV</button>
+        <div class="socials-container">
+          <a class="icon" target="_blank" href="https://www.linkedin.com/in/luis-aramayo-171055235/">
+             <i class='icon-linkedin bx bxl-linkedin'></i>
+          </a>
+          <a class="icon" target="_blank" href="https://github.com/Luis-aramayo-18">
+            <i class='icon-github bx bxl-github'></i>
+          </a>
         </div>
-      </section>
-      <section id="about-me">
+      </div>
+    </div>
+    </section>
+    <section id="about-me">
         <div class="row">
           <div class="about-col-1">
-            <img src="../assets/book82.jpg" alt="" />
+            <img src="../assets/book82.jpg" alt="">
           </div>
           <div class="about-col-2">
             <h1 class="title-aboutme">Sobre mi</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus
-              temporibus cumque sapiente quidem ea iusto vel quae, repellat
-              mollitia illum aperiam minima possimus?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?</p>
 
             <div class="tab-titles">
-              <h3 class="tab-links active-link" onclick="openTab('educacion')">
-                Educacion
-              </h3>
-              <h3 class="tab-links" onclick="openTab('experiencia')">
-                Experiencia
-              </h3>
+              <p class="tab-links active-link" onclick="openTab('educacion')">Educacion</p>
+              <p class="tab-links" onclick="openTab('experiencia')">Experiencia</p>
             </div>
             <div class="tab-content active-tab" id="educacion">
               <ul>
-                <li><span>UI?UX</span><br />Desingning web/app interfaces</li>
-                <li><span>UI?UX</span><br />Desingning web/app interfaces</li>
-                <li><span>UI?UX</span><br />Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
               </ul>
             </div>
             <div class="tab-content" id="experiencia">
               <ul>
-                <li><span>UI?UX</span><br />Desingning web/app pepe</li>
-                <li><span>UI?UX</span><br />Desingning web/app interfaces</li>
-                <li><span>UI?UX</span><br />Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app pepe</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
+                <li><span>UI?UX</span><br>Desingning web/app interfaces</li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
-      <section id="skills">
-        <div class="skills-container-text">
-          <p>mis</p>
-          <h1 class="skills-title-section">Habilidades</h1>
-          <p>con tecnologias</p>
-        </div>
-        <div class="row-skills">
+    </section>
+    <section id="skills">
+      <div class="div-text-experience">
+        <p>mis</p>
+        <h1 class="title-skills">Habilidades</h1>
+        <p>con tecnologias</p>
+      </div>
+      <div class="carousel-container">
+      <div class="carousel">
           <div class="skills-col-1">
             <h2 class="skills-subtitle">Frontend Skills</h2>
             <div class="skills-article-container">
               <article>
                 <div class="skill-name">
-                  <i style="color: #f06529" class="icon-skill bx bxl-html5"></i>
+                  <i style="color: #f06529" class='icon-skill bx bxl-html5'></i>
                   <span>HTML</span>
                 </div>
                 <div class="skill-progress">
@@ -149,52 +125,50 @@
               </article>
               <article>
                 <div class="skill-name">
-                  <i style="color: #264de4" class="icon-skill bx bxl-css3"></i>
+                  <i style="color: #264de4" class='icon-skill bx bxl-css3'></i>
                   <span>CSS</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress css-progress">
                     <div class="percentage css-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i
-                    style="color: #f7df1e"
-                    class="icon-skill bx bxl-javascript"
-                  ></i>
+                  <i style="color: #F7DF1E" class='icon-skill bx bxl-javascript'></i>
                   <span>JavaScript</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress js-progress">
                     <div class="percentage js-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i style="color: #61dbfb" class="icon-skill bx bxl-react"></i>
+                  <i style="color: #61DBFB" class='icon-skill bx bxl-react'></i>
                   <span>ReactJs</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress react-progress">
                     <div class="percentage react-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i
-                    style="color: #563d7c"
-                    class="icon-skill bx bxl-bootstrap"
-                  ></i>
+                  <i style="color: #563d7c" class='icon-skill bx bxl-bootstrap'></i>
                   <span>Bootstrap</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress bootstrap-progress">
                     <div class="percentage bootstrap-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
             </div>
@@ -204,64 +178,55 @@
             <div class="skills-article-container">
               <article>
                 <div class="skill-name">
-                  <i style="color: #00758f" class="icon-skill bx bxs-data"></i>
+                  <i style="color: #00758f" class='icon-skill bx bxs-data'></i>
                   <span>MySQL</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress mysql-progress">
                     <div class="percentage mysql-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i
-                    style="color: #563d7c"
-                    class="icon-skill bx bxl-nodejs"
-                  ></i>
+                  <i style="color: #563d7c" class='icon-skill bx bxl-nodejs'></i>
                   <span>NodeJs</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress node-progress">
                     <div class="percentage node-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i
-                    style="color: #563d7c"
-                    class="icon-skill bx bxl-mongodb"
-                  ></i>
+                  <i style="color: #563d7c" class='icon-skill bx bxl-mongodb'></i>
                   <span>MongoDB</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress mongo-progress">
                     <div class="percentage mongo-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <img
-                    class="logo-img-skill"
-                    src="../assets/icons8-express-js-50.png"
-                    alt=""
-                  />
+                  <img class="logo-img-skill" src="../assets/icons8-express-js-50.png" alt="">
                   <span>ExpressJs</span>
                 </div>
                 <div class="skill-progress">
                   <div class="progress express-progress">
                     <div class="percentage express-percentage"></div>
                   </div>
+                  
                 </div>
               </article>
               <article>
                 <div class="skill-name">
-                  <i
-                    style="color: #ffffff"
-                    class="icon-skill bx bxl-github"
-                  ></i>
+                  <i style="color:  #211111" class='icon-skill bx bxl-github'></i>
                   <span>GitHub</span>
                 </div>
                 <div class="skill-progress">
@@ -277,50 +242,28 @@
             <div class="skills-article-ring-container">
               <article>
                 <div class="div-ring-container">
-                  <div class="progress-container">
-                    <div class="circle"></div>
-                    <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle creativity-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                    </svg>
-                    <div class="percentage-ring creativity-porcentage"></div>
-                  </div>
-                  <div class="skill-ring-name">
-                    <span>Creatividad</span>
-                  </div>
+                <div class="progress-container">
+                  <div class="circle"></div>
+                  <svg class="progress-ring">
+                    <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                    <circle class="progress-ring-circle creativity-progress" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <div class="percentage-ring creativity-porcentage"></div>
                 </div>
+                <div class="skill-ring-name">
+                  <span>Creatividad</span>
+                </div>
+              </div>
               </article>
               <article>
                 <div class="div-ring-container">
                   <div class="progress-container">
                     <div class="circle"></div>
                     <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle comunication-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
+                      <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                      <circle class="progress-ring-circle comunication-progress" cx="60" cy="60" r="50"></circle>
                     </svg>
-                    <div class="percentage-ring comunication-porcentage">
-                      66%
-                    </div>
+                    <div class="percentage-ring comunication-porcentage">66%</div>
                   </div>
                   <div class="skill-ring-name">
                     <span>Comunicacion</span>
@@ -332,22 +275,10 @@
                   <div class="progress-container">
                     <div class="circle"></div>
                     <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle problemresolution-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
+                      <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                      <circle class="progress-ring-circle problemresolution-progress" cx="60" cy="60" r="50"></circle>
                     </svg>
-                    <div class="percentage-ring problemresolution-porcentage">
-                      71%
-                    </div>
+                    <div class="percentage-ring problemresolution-porcentage">71%</div>
                   </div>
                   <div class="skill-ring-name">
                     <span>Resolucion de Problemas</span>
@@ -359,18 +290,8 @@
                   <div class="progress-container">
                     <div class="circle"></div>
                     <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle teamwork-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
+                      <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                      <circle class="progress-ring-circle teamwork-progress" cx="60" cy="60" r="50"></circle>
                     </svg>
                     <div class="percentage-ring teamwork-porcentage">100%</div>
                   </div>
@@ -384,18 +305,8 @@
                   <div class="progress-container">
                     <div class="circle"></div>
                     <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle autodidact-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
+                      <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                      <circle class="progress-ring-circle autodidact-progress" cx="60" cy="60" r="50"></circle>
                     </svg>
                     <div class="percentage-ring autodidact-porcentage">82%</div>
                   </div>
@@ -409,22 +320,10 @@
                   <div class="progress-container">
                     <div class="circle"></div>
                     <svg class="progress-ring">
-                      <circle
-                        class="progress-ring-background"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
-                      <circle
-                        class="progress-ring-circle agilemethod-progress"
-                        cx="60"
-                        cy="60"
-                        r="50"
-                      ></circle>
+                      <circle class="progress-ring-background" cx="60" cy="60" r="50"></circle>
+                      <circle class="progress-ring-circle agilemethod-progress" cx="60" cy="60" r="50"></circle>
                     </svg>
-                    <div class="percentage-ring agilemethod-porcentage">
-                      76%
-                    </div>
+                    <div class="percentage-ring agilemethod-porcentage">76%</div>
                   </div>
                   <div class="skill-ring-name">
                     <span>Metodologias Agiles</span>
@@ -433,282 +332,263 @@
               </article>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="proyects">
-        <div class="projects-container">
-          <div class="proyects-container-text">
-            <p>mis</p>
-            <h1 class="title-projects">Proyectos</h1>
-            <p>si puedes imaginarlo puedes programarlo.</p>
-          </div>
-          <div class="row-proyects">
-            <div class="proyect-col-1">
-              <img
-                class="proyect-img"
-                src="../assets/2023-09-11 (10).png"
-                alt="imagen-de-proyecto"
-              />
-              <img
-                class="proyect-img-2"
-                src="../assets/Screenshot_20230911-194654.png"
-                alt=""
-              />
-              <div class="layer">
-                <h3>Eccommerse-Electronica</h3>
-                <p>
-                  Esta app nacio como una oportunidad laboral, para un cliente
-                  cercano. Aun estoy trabajando en el con los estilos y
-                  agregandoles algunas funcionalidades.
-                </p>
-                <p>
-                  Se trata de un e-ccommerse de electronica con carrito de
-                  compraas, y formulario de compra. Las tecnologias que use son
-                </p>
-                <p>React</p>
-                <p>Js</p>
-                <p>Css</p>
-
-                <!-- <h4>Tecnologias</h4>
-            <span>ReactJs</span>
-            <span>Js</span>
-            <span>css</span> -->
-                <div class="container-icon">
-                  <a
-                    target="_blank"
-                    href="https://tecno-store-eccommerse-app.netlify.app/"
-                  >
-                    <i class="icon-proyect bx bx-link-external"></i>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://github.com/Luis-aramayo-18/ecommerse-electronica"
-                  >
-                    <i class="icon-proyect bx bxl-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="proyect-col-2">
-              <img
-                class="proyect-img"
-                src="../assets/2023-09-11 (11).png"
-                alt=""
-              />
-              <div class="layer">
-                <h3>Rolling-Food</h3>
-                <p>
-                  Es la app que desarrolle grupalmente, para presentar como
-                  proyecto final del curso de RollingCode
-                </p>
-                <p>
-                  Yo me encargue de hacer el back, conectarlo con el front y
-                  agregar algunos estilos
-                </p>
-                <p>
-                  Se trata de un app para un restaurant de comida rapida. Las
-                  tecnologias que use son
-                </p>
-                <div class="container-icon">
-                  <a
-                    target="_blank"
-                    href="https://devsfood-rolling.netlify.app/"
-                  >
-                    <i class="icon-proyect bx bx-link-external"></i>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://github.com/Luis-aramayo-18/Rolling-Restaurant"
-                  >
-                    <i class="icon-proyect bx bxl-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="services">
-        <div class="services-container">
-          <div class="services-container-text">
-            <p>estos son los</p>
-            <h1 class="title-services">Serivicios</h1>
-            <p>que ofrezco</p>
-          </div>
-          <div class="container-card">
-            <div class="card">
-              <i class="icon-services bx bx-laptop"></i>
-              <h2>Desarrollo <br />Web</h2>
-              <p
-                onclick="openModal('desarrollo-web')"
-                data-modal-target="desarrollo-web"
-              >
-                ver mas
-              </p>
-
-              <div class="modal desarrollo-web">
-                <div class="card-content">
-                  <i onclick="closeModal()" class="close bx bx-x"> </i>
-                  <div class="modal-content-text">
-                    <h3 class="modal-title"></h3>
-                    <p class="modal-content-1"></p>
-                    <p class="modal-content-2"></p>
-                    <p class="modal-content-3"></p>
-                    <p class="modal-content-4"></p>
-                    <p class="modal-content-5"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <i class="icon-services bx bxs-layout"></i>
-              <h2>Diseño <br />UI/UX</h2>
-              <p
-                data-modal-target="diseño-ui-ux"
-                onclick="openModal('diseño-ui-ux')"
-              >
-                ver mas
-              </p>
-
-              <div class="modal diseño-ui-ux">
-                <div class="card-content">
-                  <i onclick="closeModal()" class="close bx bx-x"> </i>
-                  <div class="modal-content-text">
-                    <h3 class="modal-title"></h3>
-                    <p class="modal-content-1"></p>
-                    <p class="modal-content-2"></p>
-                    <p class="modal-content-3"></p>
-                    <p class="modal-content-4"></p>
-                    <p class="modal-content-5"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <i class="icon-services bx bxs-cart"></i>
-              <h2>Desarrollo <br />E-ccommerse</h2>
-              <p
-                onclick="openModal('desarrollo-eccommerse')"
-                data-modal-target="desarrollo-eccommerse"
-              >
-                ver mas
-              </p>
-
-              <div class="modal desarrollo-eccommerse">
-                <div class="card-content">
-                  <i onclick="closeModal()" class="close bx bx-x"> </i>
-                  <div class="modal-content-text">
-                    <h3 class="modal-title"></h3>
-                    <div class="container-check">
-                      <p class="modal-content-1"></p>
-                      <i class="bx bxs-check-circle"></i>
-                    </div>
-                    <div class="container-check">
-                      <p class="modal-content-2"></p>
-                      <i class="bx bxs-check-circle"></i>
-                    </div>
-                    <div class="container-check">
-                      <p class="modal-content-3"></p>
-                      <i class="bx bxs-check-circle"></i>
-                    </div>
-                    <div class="container-check">
-                      <p class="modal-content-4"></p>
-                      <i class="bx bxs-check-circle"></i>
-                    </div>
-                    <div class="container-check">
-                      <p class="modal-content-5"></p>
-                      <i class="bx bxs-check-circle"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="row-contact">
-          <div class="contact-col-1">
-            <div class="container-inf">
-              <div class="container-contact-inf">
-                <div class="icont-inf">
-                  <i class="icon-contact bx bxs-phone-incoming"></i>
-                </div>
-                <div class="inf-contact">
-                  <h4>Telefono</h4>
-                  <p>+54 9 381 576-5255</p>
-                </div>
-              </div>
-              <div class="container-contact-inf">
-                <div class="icont-inf">
-                  <i class="icon-contact bx bxs-envelope"></i>
-                </div>
-                <div class="inf-contact">
-                  <h4>Email</h4>
-                  <p>Luis.aramayo.18@gmail.com</p>
-                </div>
-              </div>
-              <div class="container-contact-inf">
-                <div class="icont-inf">
-                  <i class="icon-contact bx bxs-map"></i>
-                </div>
-                <div class="inf-contact">
-                  <h4>Localidad</h4>
-                  <p>
-                    Argentina-Tucuman <br />
-                    Av.Gobernador Del Campo <br />
-                    #1500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-col-2">
-            <h1 class="title-contact">Contactame</h1>
-            <form id="form" class="form-contact">
-              <div class="container-form-1">
-                <input
-                  id="name"
-                  type="text"
-                  name="nombre"
-                  placeholder="Nombre Completo"
-                  required
-                />
-                <input id="email" type="Email" name="email" placeholder="Email" required />
-              </div>
-              <input id="asunto" type="text" name="asunto" placeholder="Asunto" required />
-              <textarea
-                name="mensaje"
-                class="text-area-contact"
-                id="mensaje"
-                placeholder="Mensaje"
-                required
-              >
-              </textarea>
-              <input
-                class="btn-contact"
-                type="submit"
-                id="button"
-                value="Enviar"
-              />
-            </form>
-
-            <script
-              type="text/javascript"
-              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-            ></script>
-
-            <script type="text/javascript">
-              emailjs.init("tE59eCf1GscLLfKQo");
-            </script>
-          </div>
-        </div>
-      </section>
-
-      <div class="arrow-up">
-        <i onclick="arrowUp()" class="bx bxs-up-arrow-square"></i>
       </div>
+      <button class="prev-button">Anterior</button>
+      <button class="next-button">Siguiente</button>
+    </div>
+    </section>
+    <section id="proyects">
+      <div class="projects-container">
+      <div class="div-text-proyects">
+        <p>mis</p>
+        <h1 class="tilte-projects">
+          Proyectos
+        </h1>
+        <p>si puedes imaginarlo puedes programarlo.</p>
+      </div>
+      <div class="row-proyects">
+        <div class="proyect-col-1">
+          <img class="proyect-img" 
+               src="../assets/2023-09-11 (10).png" 
+               alt="imagen-de-proyecto">
+          <div class="layer">
+            <h3>Eccommerse-Electronica</h3>
+            <p>
+              Esta app nacio como una oportunidad laboral, para un cliente
+              cercano. Aun estoy trabajando en el con los estilos y
+              agregandoles algunas funcionalidades.
+            </p>
+            <p>
+              Se trata de un e-ccommerse de electronica con carrito de
+              compraas, y formulario de compra. Las tecnologias que use son
+            </p>
+            <div class="container-icon">
+              <a target="_blank" 
+                 href="https://tecno-store-eccommerse-app.netlify.app/">
+                  <i class='icon-proyect bx bx-link-external'></i>
+              </a>
+              <a target="_blank" 
+                 href="https://github.com/Luis-aramayo-18/ecommerse-electronica">
+                <i class='icon-proyect bx bxl-github'></i>
+              </a>
+              </div>
+          </div>
+        </div>
+        <div class="proyect-col-2">
+          <img class="proyect-img" 
+               src="../assets/2023-09-11 (11).png" 
+               alt="">
+          <div class="layer">
+            <h3>Rolling-Food</h3>
+            <p>
+              Es la app que desarrolle grupalmente, para presentar como
+              proyecto final del curso de RollingCode
+            </p>
+            <p>
+              Yo me encargue de hacer el back, conectarlo con el front y
+              agregar algunos estilos
+            </p>
+            <p>
+              Se trata de un app para un restaurant de comida rapida. Las
+              tecnologias que use son
+            </p>
+            <div class="container-icon">
+            <a target="_blank" 
+               href="https://devsfood-rolling.netlify.app/">
+              <i class='icon-proyect bx bx-link-external'></i>
+            </a>
+            <a target="_blank" 
+               href="https://github.com/Luis-aramayo-18/Rolling-Restaurant">
+              <i class='icon-proyect bx bxl-github'></i>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="services-container">
+        <div class="services-header">
+          <p>estos son los</p>
+          <h1 class="services-title">Serivicios</h1>
+          <p>que ofrezco
+          </p>
+        </div>
+        <div class="container-card">
+          <div class="card">
+            <i class='icon-services bx bx-laptop'></i>
+            <h2>Desarrollo <br>Web</h2>
+            <p onclick="openModal('desarrollo-web')" 
+               data-modal-target="desarrollo-web">
+               ver mas
+            </p>
+
+            <div class="modal desarrollo-web">
+            <div class="card-content">
+              <i onclick="closeModal()" 
+                 class='close bx bx-x'>
+              </i>
+              <div class="modal-content-text">
+              <h3 class="modal-title"></h3>
+              <p class="modal-content-1"></p>
+              <p class="modal-content-2"></p>
+              <p class="modal-content-3"></p>
+              <p class="modal-content-4"></p>
+              <p class="modal-content-5"></p>
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="card">
+            <i class='icon-services bx bxs-layout'></i>
+            <h2>Diseño <br>UI/UX</h2>
+            <p data-modal-target="diseño-ui-ux" 
+               onclick="openModal('diseño-ui-ux')">
+               ver mas
+            </p>
+
+            <div class="modal diseño-ui-ux">
+              <div class="card-content">
+                <i onclick="closeModal()" 
+                   class='close bx bx-x'>
+                </i>
+                <div class="modal-content-text">
+                  <h3 class="modal-title"></h3>
+                  <p class="modal-content-1"></p>
+                  <p class="modal-content-2"></p>
+                  <p class="modal-content-3"></p>
+                  <p class="modal-content-4"></p>
+                  <p class="modal-content-5"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <i class='icon-services bx bxs-cart'></i>
+            <h2>Desarrollo <br>E-ccommerse</h2>
+            <p onclick="openModal('desarrollo-eccommerse')" 
+               data-modal-target="desarrollo-eccommerse">
+               ver mas
+            </p>
+
+            <div class="modal desarrollo-eccommerse">
+              <div class="card-content">
+                <i onclick="closeModal()" 
+                   class='close bx bx-x'>
+                </i>
+                <div class="modal-content-text">
+                  <h3 class="modal-title"></h3>
+                  <div class="container-check">
+                    <p class="modal-content-1"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-2"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-3"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-4"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                  <div class="container-check">
+                    <p class="modal-content-5"></p>
+                  <i class='bx bxs-check-circle'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="row-contact">
+        <div class="contact-col-1">
+          <div class="container-inf">
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-phone-incoming"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Telefono</h4>
+                <p>+54 9 381 576-5255</p>
+              </div>
+            </div>
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-envelope"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Email</h4>
+                <p>Luis.aramayo.18@gmail.com</p>
+              </div>
+            </div>
+            <div class="container-contact-inf">
+              <div class="icont-inf">
+                <i class="icon-contact bx bxs-map"></i>
+              </div>
+              <div class="inf-contact">
+                <h4>Localidad</h4>
+                <p>
+                  Argentina-Tucuman <br />
+                  Av.Gobernador Del Campo <br />
+                  #1500
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-col-2">
+          <h1 class="title-contact">Contactame</h1>
+          <form id="form" class="form-contact">
+            <div class="container-form-1">
+              <input
+                id="name"
+                type="text"
+                name="nombre"
+                placeholder="Nombre Completo"
+                required
+              />
+              <input id="email" type="Email" name="email" placeholder="Email" required />
+            </div>
+            <input id="asunto" type="text" name="asunto" placeholder="Asunto" required />
+            <textarea
+              name="mensaje"
+              class="text-area-contact"
+              id="mensaje"
+              placeholder="Mensaje"
+              required
+            >
+            </textarea>
+            <input
+              class="btn-contact"
+              type="submit"
+              id="button"
+              value="Enviar"
+            />
+            <span class="confirmation-mg">Mensaje enviado correctamente</span>
+          </form>
+
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          ></script>
+
+          <script type="text/javascript">
+            emailjs.init("tE59eCf1GscLLfKQo");
+          </script>
+        </div>
+      </div>
+    </section>
+    <div class="arrow-up">
+      <i onclick="arrowUp()" class="bx bxs-up-arrow-square"></i>
+    </div>
     </main>
     <footer></footer>
     <script src="https://unpkg.com/scrollreveal"></script>
