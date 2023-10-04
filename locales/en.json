@@ -1,0 +1,64 @@
+{
+    "desktop-nav": {
+        "about-me": "about me",
+        "projects": "projects",
+        "services": "services",
+        "technologies": "technologies",
+        "contact": "contact"
+    },
+    "profile": {
+        "sub-title": "Hi !, am,",
+        "sub-title2": "Frontend Developer",
+        "download-cv": "Download CV"
+    },
+    "about-me": {
+        "title": "About me",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?",
+        "sub-title": "Education",
+        "sub-title2": "Experience"
+    },
+    "projects":{
+        "sub-title": "my",
+        "title": "Projects",
+        "sub-title2": "If you can imagine it you can program it.",
+        "content-layer1": "This app was born as a job opportunity, for a close client. I'm still working on it with the styles and adding some functionality to them. It is an electronics e-commerce with a shopping cart and purchase form.",
+        "content-layer2": "This app was developed as a group, to present as the final project of the RollingCode course. I was in charge of doing the back, and the connection with the front. This is an app for a fast food restaurant."
+    },
+    "services":{
+        "sub-title": "my",
+        "title": "Services",
+        "title-card1": "Web<br>Development",
+        "title-card2": "Design<br>UI/UX",
+        "title-card3": "E-commerce<br>Development",
+        "link": "see more",
+        "title-modal1": "Web Development",
+        "item-modal1": "Custom Design",
+        "item-modal2": "Social media integration",
+        "item-modal3": "Speed ​​Optimization",
+        "item-modal4": "Multilingual Compatibility",
+        "item-modal5": "Branding y Posicionamiento",
+        "title-modal2": "Design UI-UX",
+        "item-modal6": "Intuitive user experience",
+        "item-modal7": "Responsive Design",
+        "item-modal8": "Minimalist style",
+        "item-modal9": "User interactive components",
+        "item-modal10": "Web Accessibility",
+        "title-modal3": "E-commerce Development",
+        "item-modal11": "Intuitive Shopping Experience",
+        "item-modal12": "Product Customization",
+        "item-modal13": "Security and Trust",
+        "item-modal14": "Ongoing Maintenance",
+        "item-modal15": "Scalability"
+    },
+    "technologies":{
+        "title": "technologies",
+        "sub-title": "and tools"
+    },
+    "contact":{
+        "title": "Contact Me",
+        "title-icon1": "Phone",
+        "title-icon2": "Email",
+        "title-icon3": "Location",
+        "message-confirmation": "The message was sent successfully"
+    }
+}

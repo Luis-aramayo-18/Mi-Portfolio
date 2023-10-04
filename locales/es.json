@@ -1,0 +1,64 @@
+{
+    "desktop-nav": {
+        "about-me": "sobre mi",
+        "projects": "proyectos",
+        "services": "servicios",
+        "technologies": "tecnologías",
+        "contact": "contacto"
+    },
+    "profile": {
+        "sub-title": "Hola, soy,",
+        "sub-title2": "Desarrollador Frontend",
+        "download-cv": "Descargar CV"
+    },
+    "about-me": {
+        "title": "Sobre mi",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?",
+        "sub-title": "Educación",
+        "sub-title2": "Experiencia"
+    },
+    "projects":{
+        "sub-title": "mis",
+        "title": "Proyectos",
+        "sub-title2": "si puedes imaginarlo, puedes programarlo.",
+        "content-layer1": "Esta app nació como una oportunidad laboral, para un cliente cercano. Aun estoy trabajando en el con los estilos y agregándoles algunas funcionalidades.Se trata de un e-commerce de electronica con carrito de compras, y formulario de compra.",
+        "content-layer2": "Es la app que desarrolle grupalmente, para presentar como proyecto final del curso de RollingCode Yo me encargue de hacer el back, conectarlo con el front y agregar algunos estilos Se trata de un app para un restaurant de comida rápida."
+    },
+    "services":{
+        "sub-title": "mis",
+        "title": "Servicios",
+        "title-card1": "Desarrollo<br>Web",
+        "title-card2": "Diseño<br>UI/UX",
+        "title-card3": "Desarrollo<br>E-commerce",
+        "link": "ver mas",
+        "title-modal1": "Desarrollo Web",
+        "item-modal1": "Diseño personalizado",
+        "item-modal2": "Integración de redes sociales",
+        "item-modal3": "Optimización de Velocidad",
+        "item-modal4": "Compatibilidad Multilingual",
+        "item-modal5": "Branding y Posicionamiento",
+        "title-modal2": "Diseño UI-UX",
+        "item-modal6": "Experiencia de usuario intuitiva",
+        "item-modal7": "Diseño Responsivo",
+        "item-modal8": "Estilo minimalista",
+        "item-modal9": "componentes interactivo para el usuario",
+        "item-modal10": "Accesibilidad Web",
+        "title-modal3": "Desarrollo E-Commerce",
+        "item-modal11": "Experiencia de Compra Intuitiva",
+        "item-modal12": "Personalización de Productos",
+        "item-modal13": "Seguridad y Confianza",
+        "item-modal14": "Mantenimiento Continuo",
+        "item-modal15": "Escalabilidad"
+    },
+    "technologies":{
+        "title": "Tecnologías",
+        "sub-title": "y herramientas"
+    },
+    "contact":{
+        "title": "Contácteme",
+        "title-icon1": "Teléfono",
+        "title-icon2": "Email",
+        "title-icon3": "Localidad",
+        "message-confirmation": "Mensaje enviado correctamente"
+    }
+}
