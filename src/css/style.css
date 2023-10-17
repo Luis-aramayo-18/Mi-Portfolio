@@ -961,13 +961,13 @@ hr{
 
 #contact{
   min-height: 90vh;
-  position: relative;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: black;
+  position: relative;
 }
 
 .row-contact{
@@ -1078,6 +1078,12 @@ hr{
   margin-top: 2rem;
 }
 
+.container-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* input{
   height: 50px;
   width: 100%;
@@ -1139,14 +1145,12 @@ hr{
 } */
 
 .arrow-up{
-  position: relative;
+  position: absolute;
+  bottom: 30px;
 }
 
 .arrow-up i{
-  font-size: 3rem;
-  position: absolute; 
-  bottom: 10px;       
-  right: 30px;        
+  font-size: 3rem;          
   z-index: 5;   
   cursor: pointer;
   color: #ffd000;
