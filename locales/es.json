@@ -52,7 +52,8 @@
     },
     "technologies":{
         "title": "Tecnologías",
-        "sub-title": "y herramientas"
+        "sub-title": "y herramientas",
+        "title-card": "Herramientas"
     },
     "contact":{
         "title": "Contácteme",

@@ -39,40 +39,34 @@ lightMode.addEventListener('click',()=>{
   }
 })
 
-const hamburguerMenu = document.querySelector('.hamburguer-icon')
+const hamburguerMenu = document.querySelector('.hamburguer-icon');
 
 hamburguerMenu.onclick = function(){
-  const navBar = document.querySelector('#desktop-nav')
-  const header = document.querySelector('.name-header')
-  const darkTheme = document.querySelector('.dark-mode')
-  const menuLinks = document.querySelector('.container-links')
-  const navLinks = document.querySelector('.nav-links')
-  const close = document.querySelector('.close-hamburguer-menu')
-
-
-  menuLinks.style.display = 'block'
-  close.style.display = 'block'
-  hamburguerMenu.style.display = 'none'
-  header.style.display = 'none'
-  darkTheme.style.display = 'none'
-  navLinks.classList.add('links-modal')
+  const closeButton = document.querySelector('.close-icon');
+  const nav = document.querySelector('nav');
+  const flags = document.querySelector('#flags');
+  const header = document.querySelector('header');
+  
+  header.style.boxShadow = '0px -5px 6px rgb(255, 255, 255)';
+  closeButton.style.display = 'block';
+  flags.style.display = 'flex';
+  nav.style.display = 'flex';
+  hamburguerMenu.style.display = 'none';
 }
 
-const closeHamburguerMenu = document.querySelector('.close-hamburguer-menu')
+const closeHamburguerMenu = document.querySelector('.close-icon')
 
 closeHamburguerMenu.onclick = function(){
-  const navBar = document.querySelector('#desktop-nav')
-  const header = document.querySelector('.name-header')
-  const darkTheme = document.querySelector('.dark-mode')
-  const menuLinks = document.querySelector('.container-links')
-  const navLinks = document.querySelector('.nav-links')
+  const flags = document.querySelector('#flags');
+  const nav = document.querySelector('nav');
+  const header = document.querySelector('header');
+  const hamburguerMenu = document.querySelector('.hamburguer-icon');
 
-  menuLinks.style.display = 'none'
-  closeHamburguerMenu.style.display = 'none'
-  hamburguerMenu.style.display = 'block'
-  header.style.display = 'block'
-  darkTheme.style.display = 'block'
-  navLinks.classList.remove('links-modal')
+  flags.style.display = 'none';
+  header.style.boxShadow = '';
+  nav.style.display = 'none';
+  hamburguerMenu.style.display = 'block';
+  closeHamburguerMenu.style.display = 'none';
 }
 
 ScrollReveal({
@@ -83,6 +77,69 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.row, .div-text-experience, .div-text-projects, .services-header', {origin : 'top'});
-ScrollReveal().reveal('.carousel, .row-projects', {origin : 'bottom'});
-ScrollReveal().reveal('.contact-col-1, .project-col-1', {origin : 'left'});
+ScrollReveal().reveal('.row-projects', {origin : 'bottom'});
+ScrollReveal().reveal('.contact-col-1, .project-col-1, .card-accordion, .carousel', {origin : 'left'});
 ScrollReveal().reveal('.contact-col-2, .project-col-2, .bxs-up-arrow-square', {origin : 'right'});
+
+
+const carousel = document.querySelector('.carousel');
+const nextButton = document.getElementById('next-button');
+const backButton = document.getElementById('prev-button');
+let position = 0;
+
+function updateCarousel() {
+  const operation = position * -33.3333;
+  carousel.style.transform = `translateX(${operation}%)`;
+};
+
+function nextSlide() {
+  if (position < 2) { // Verificamos que no hayamos llegado al límite
+    position++;
+    updateCarousel();
+  }
+};
+
+function prevSlide() {
+  if (position > 0) { // Verificamos que no estemos en la primera posición
+    position--;
+    updateCarousel();
+  }
+};
+
+nextButton.addEventListener('click', nextSlide);
+backButton.addEventListener('click', prevSlide);
+
+
+// let currentIndex = 0;
+
+// function nextSlide() {
+//   currentIndex++;
+//   if (currentIndex >= carousel.children.length) {
+//     currentIndex = 0;
+//   }
+//   updateSlide();
+// };
+
+// function prevSlide() {
+//   currentIndex--;
+//   if (currentIndex < 0) {
+//     currentIndex = carousel.children.length - 1;
+//   }
+//   updateSlide();
+// };
+
+// function updateSlide() {
+//   for (let i = 0; i < carousel.children.length; i++) {
+//     carousel.children[i].style.display = 'none';
+//     carousel.children[i].classList.add('fade-out');
+//     carousel.children[i].classList.remove('fade-in');
+//   }
+//   carousel.children[currentIndex].style.display = 'block';
+//   carousel.children[currentIndex].classList.remove('fade-out');
+//   carousel.children[currentIndex].classList.add('fade-in');
+// }
+
+// prevButton.addEventListener('click', prevSlide);
+// nextButton.addEventListener('click', nextSlide);
+
+// updateSlide();

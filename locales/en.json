@@ -51,8 +51,9 @@
         "item-modal15": "Scalability"
     },
     "technologies":{
-        "title": "technologies",
-        "sub-title": "and tools"
+        "title": "Technologies",
+        "sub-title": "and tools",
+        "title-card": "Tools"
     },
     "contact":{
         "title": "Contact Me",
