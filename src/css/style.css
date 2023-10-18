@@ -80,6 +80,7 @@ html {
    --background-contact: #000000;
    --text-decoration-contact: #ffffff;
    --text-button-contact: #ffffff;
+   --hover-button-contact: #ffd000ed;
 
    --arrow-up: #ffd000;
 }
@@ -136,6 +137,7 @@ html {
   --border-btn-contact: #000000;
   --btn-contact: #000000;
   --border-contact: #ffffff;
+  --hover-button-contact: #000000ed;
 
   --arrow-up: #000000;
 }
@@ -1011,7 +1013,7 @@ position: relative;
 }
 
 .container-inf div:hover {
-  background-color: rgba(0, 0, 0, 0.874);
+  background-color: var(--hover-button-contact);
 }
 
 .container-inf div p{
