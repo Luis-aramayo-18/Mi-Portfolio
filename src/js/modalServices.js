@@ -80,34 +80,12 @@
         openAccordion.forEach((accordion) => {
           accordion.closest('.card-accordion').classList.remove('active');
           accordion.closest('.card-accordion').querySelector('.icon-accordion').style.transform = 'rotate(0deg)';
+          accordion.closest('.card-accordion').querySelector('.icon-accordion').style.color = '';
         });
 
-        cardAccordion.classList.add('active');
+      cardAccordion.classList.add('active');
       cardAccordion.querySelector('.icon-accordion').style.transform = 'rotate(180deg)';
-      cardAccordion.querySelector('.icon-accordion').style.color = '#ffd000';
+      cardAccordion.querySelector('.icon-accordion').style.color = getComputedStyle(document.documentElement).getPropertyValue('--icon-active-accordion');
       }
-
-      // item.nextElementSibling.style.transform = 'rotate(180deg)';
-
-      // const requestJson = await fetch(`../../locales/${language}.json`);
-      // const texts = await requestJson.json();
-
-      // for(const textToChange of textsToChange){
-      //   const section = textToChange.dataset.section;
-      //   const value = textToChange.dataset.value;
-
-      //   textToChange.innerHTML=texts[section][value];
-      // };
-  
-    //   openAccordion.forEach((accordion) => {
-    //     const cardAccordion = accordion.closest('.card-accordion');
-    //     console.log(cardAccordion)
-    //     if (cardAccordion !== e.target.closest('.card-accordion')) {
-    //         cardAccordion.classList.remove('active');
-    //         cardAccordion.querySelector('.icon-accordion').style.transform = 'rotate(0deg)';
-    //     }
-    // });
-
-      // e.target.closest('.card-accordion').classList.add('active');
     });
   });

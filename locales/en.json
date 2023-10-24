@@ -44,6 +44,7 @@
         "item-modal9": "User interactive components",
         "item-modal10": "Web Accessibility",
         "title-modal3": "E-commerce Development",
+        "title-modal4": "E-Comm Creation",
         "item-modal11": "Intuitive Shopping Experience",
         "item-modal12": "Product Customization",
         "item-modal13": "Security and Trust",
@@ -57,6 +58,7 @@
     },
     "contact":{
         "title": "Contact Me",
+        "sub-title": "and let's work together!",
         "title-icon1": "Phone",
         "title-icon2": "Email",
         "title-icon3": "Location",

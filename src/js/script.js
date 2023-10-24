@@ -56,7 +56,7 @@ hamburguerMenu.onclick = function(){
   const header = document.querySelector('header');
   
   header.style.boxShadow = '0px -5px 6px rgb(255, 255, 255)';
-  closeButton.style.display = 'block';
+  closeButton.style.display = 'flex';
   flags.style.display = 'flex';
   nav.style.display = 'flex';
   hamburguerMenu.style.display = 'none';
@@ -73,7 +73,7 @@ closeHamburguerMenu.onclick = function(){
   flags.style.display = 'none';
   header.style.boxShadow = '';
   nav.style.display = 'none';
-  hamburguerMenu.style.display = 'block';
+  hamburguerMenu.style.display = 'flex';
   closeHamburguerMenu.style.display = 'none';
 }
 
@@ -84,10 +84,10 @@ ScrollReveal({
   delay: 200
 });
 
-ScrollReveal().reveal('.row, .div-text-experience, .services-header', {origin : 'top'});
+ScrollReveal().reveal('.row, .div-text-experience, .services-header, .div-text-projects, .header-contact', {origin : 'top'});
 ScrollReveal().reveal('.container-contact-inf, .project-col-2, .skills-col-2', {origin : 'bottom'});
-ScrollReveal().reveal('.card-accordion, .carousel, .container-inf, .hr-section1, .projects-sub-titile, .projects-sub-title2, .project-col-1, .skills-col-1', {origin : 'left'});
-ScrollReveal().reveal('.bxs-up-arrow-square, .header-contact, .hr-section2, .title-projects, .project-col-3, .skills-col-3', {origin : 'right'});
+ScrollReveal().reveal('.accordion-web, .carousel, .container-inf, .hr-section1, .project-col-1, .skills-col-1, .accordion-ecomm', {origin : 'left'});
+ScrollReveal().reveal('.bxs-up-arrow-square, .hr-section2, .project-col-3, .skills-col-3, .accordion-ui-ux', {origin : 'right'});
 
 
 const carousel = document.querySelector('.carousel');
