@@ -170,37 +170,6 @@
 
   /* --------ABOUT ME------ */
 
-  /* #about-me{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .row{
-    display: block;
-    width: 100%;
-    gap: 0;
-    margin: 0 1rem;
-    padding: 20px;
-    width: 100%;
-  }
-
-  .tab-content{
-    margin-left: 15px;
-  }
-
-  .about-col-1{
-    display: none;
-  }
-
-  .about-col-2{
-    flex-basis: 100%;
-    margin: 0;
-  } */
-
   #about-me{
     margin: 0 1rem;
   }
@@ -303,6 +272,79 @@
     margin: 0 2rem;
   }
 
+  /* --------TECHNOLOGIES------ */
+
+  #prev-button{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div-text-experience{
+    margin: 0;
+  }
+
+  .title-skills{
+    font-size: 2.5rem;
+  }
+
+  #next-button{
+    position: absolute;
+    right: 0;
+  }
+
+  .button-carrousel{
+    font-size: 2.5rem;
+    display: block;
+  }
+
+  #technologies{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .carousel-container{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .carousel{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 300%;
+
+    transition: all .3s ease;
+    transform: translateX(0%);
+    overflow: hidden;
+  }
+
+  .skills-col-1,
+  .skills-col-2,
+  .skills-col-3{
+    width: calc(100% / 3);
+    margin: 2.5rem;
+    
+  }
+
   /* --------SERVICES------ */
 
   #services{
@@ -400,80 +442,6 @@
 .rotate180 {
   transform: rotate(180deg);
 }
-
-  /* --------TECHNOLOGIES------ */
-
-  #prev-button{
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  .div-text-experience{
-    margin: 0;
-  }
-
-  .title-skills{
-    font-size: 2.5rem;
-  }
-
-  #next-button{
-    position: absolute;
-    right: 0;
-  }
-
-  .button-carrousel{
-    font-size: 2.5rem;
-    display: block;
-  }
-
-  #technologies{
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  .carousel-container{
-    margin: 0;
-    width: 100%;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-
-  .carousel{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    width: 300%;
-
-    transition: all .3s ease;
-    transform: translateX(0%);
-    overflow: hidden;
-  }
-
-  .skills-col-1,
-  .skills-col-2,
-  .skills-col-3{
-    width: calc(100% / 3);
-    margin: 2.5rem;
-    
-  }
- 
 
   /* --------CONTACT------ */
 
