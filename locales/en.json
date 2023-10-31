@@ -13,7 +13,7 @@
     },
     "about-me": {
         "title": "About me",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?",
+        "content": "Hello! I'm Luis, a Junior Developer. <br> My primary focus is web development, with a special inclination towards frontend, although I also have knowledge in backend. <br> My favorite technologies for development are HTML, CSS, and React. <br> I consider myself a lifelong learner and a dedicated self-teacher. I love to learn new technologies and stay updated with the latest advancements. <br> Some of my hobbies include reading, training, and sports.",
         "sub-title": "Education",
         "sub-title2": "Experience"
     },

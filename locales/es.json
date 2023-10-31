@@ -13,7 +13,7 @@
     },
     "about-me": {
         "title": "Sobre mi",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi. Veniam rerum consequatur et tenetur, ducimus temporibus cumque sapiente quidem ea iusto vel quae, repellat mollitia illum aperiam minima possimus?",
+        "content": "¡Hola! Soy Luis, un Desarrollador Junior. <br> Mi enfoque principal es el desarrollo de sitios web, con una inclinación especial hacia el frontend, aunque también tengo conocimientos en backend. <br> Mis tecnologías favoritas para el desarrollo son HTML, CSS y React. <br> Me considero un eterno aprendiz, y un autodidacta empedernido. Me encanta aprender nuevas tecnologías y estar al tanto de las nuevas actualizaciones. <br> Algunos de mis hobbies son la lectura, el entrenamiento y el deporte.",
         "sub-title": "Educación",
         "sub-title2": "Experiencia"
     },

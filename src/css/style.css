@@ -9,6 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--body-primary);
   overflow-x: hidden;
+  transition: background-color 0.7s ease;
 }
 
 
@@ -89,6 +90,7 @@ html {
 }
 
 .dark-theme{
+  transition: background-color 0.7s ease;
   /* --------------ABOUT----------------- */
   --body-primary: #ffffffb6;
   --border-about: #ffffff;
@@ -183,13 +185,14 @@ nav{
   gap: 10px;
   position: absolute;
   left: 0;
-  margin-left: 8rem;
+  margin-left: 8.2rem;
 }
 
 .name-header i{
   font-size: 2rem;
   color: whitesmoke;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .name-header h1{
@@ -225,7 +228,7 @@ nav{
   display: none;
 }
 
-.flags{
+#flags{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,19 +236,25 @@ nav{
   position: absolute;
   right: 0;
   margin-right: 10.5rem;
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.flags-item{
+  transition: transform 0.5s ease, border-color 0.5s ease;
 }
 
 .flags-item img{
   width: 27px;
   display: block;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease, border-color 0.5s ease;
 }
 
 .selected-flag{
   transform: scale(1.2);
   border: solid 2px #ffd200;
   border-radius: 50%;
+  transition: transform 0.5s ease, border-color 0.5s ease;
 }
 
 /* -------------------------HAMBURGUER NAV------------------- */
@@ -393,7 +402,7 @@ backdrop-filter: blur( 2px );
 
 #about-me{
   min-height: 100vh;
-  margin: 0 15rem;
+  margin: 2rem 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,8 +415,14 @@ backdrop-filter: blur( 2px );
   padding: 20px;
 }
 
+.aboutme-sub-title{
+  font-size: 1.3rem;
+}
+
 .about-col-1{
-  flex-basis: 33%;
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
 }
 
 .title-aboutme{
@@ -423,7 +438,7 @@ backdrop-filter: blur( 2px );
 
 .about-col-2{
   margin-left: 2rem;
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 
 .about-col-2 p{
@@ -433,7 +448,7 @@ backdrop-filter: blur( 2px );
 
 .tab-titles{
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 0;
 }
 
 .tab-titles p{
@@ -464,6 +479,10 @@ position: relative;
   width: 50%;
 }
 
+.tab-content ul{
+  margin-left: 1rem;
+}
+
 .tab-content ul li span{
   color: var(--li-tab-about);
   font-size: 15px;
@@ -472,7 +491,7 @@ position: relative;
 
 .tab-content ul li{
   color: var(--link-tab-about);
-  margin: 10px 0;
+  margin: 1.2rem 0;
 }
 
 .tab-content{

@@ -171,15 +171,40 @@
   /* --------ABOUT ME------ */
 
   #about-me{
+    margin: 2rem 1rem;
+  }
+
+  .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 1rem;
+  }
+
+  .aboutme-sub-title{
+    font-size: 1.3rem;
+  }
+
+  .aboutme-content{
+    width: 100%;
+    margin-top: .5rem;
   }
 
   .about-col-1{
     display: none;
   }
 
-  .tab-content{
-    margin-left: 10px;
+  .about-col-2{
+    gap: 2rem;
+  }
+
+  .tab-titles{
+    margin-top: 2rem;
+  }
+
+  .tab-content ul{
+    margin: 0;
   }
 
   /* --------PROJECTS------ */
