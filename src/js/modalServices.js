@@ -6,7 +6,8 @@
     if(modalId){
       const body = document.body
       const modal = document.querySelector(`.modal.${modalId}`);
-      const cardsToStopTransform = document.querySelectorAll('.card')
+      const cardsToStopTransform = document.querySelectorAll('.card');
+      const navBar = document.querySelector('header');
   
       cardsToStopTransform.forEach(card => {
         card.classList.add('disabled-hover');
@@ -21,6 +22,7 @@
   
       body.style.overflow = 'hidden';
       modal.style.display = 'block';
+      navBar.style.display = 'none';
     }
   };
 
@@ -36,21 +38,21 @@
   });
 
   function closeModal(){
-    const modal = document.querySelectorAll('.modal')
-    const cardsToStopTransform = document.querySelectorAll('.card')
-    const body = document.body
-
-    
+    const modal = document.querySelectorAll('.modal');
+    const cardsToStopTransform = document.querySelectorAll('.card');
+    const body = document.body;
+    const navBar = document.querySelector('header');
   
     modal.forEach(element => {
-      element.style.display = 'none'
-    })
+      element.style.display = 'none';
+    });
   
     cardsToStopTransform.forEach(element => {
-      element.classList.remove('disabled-hover')
-    })
+      element.classList.remove('disabled-hover');
+    });
   
     body.style.overflow = '';
+    navBar.style.display = 'flex';
   }
 
 

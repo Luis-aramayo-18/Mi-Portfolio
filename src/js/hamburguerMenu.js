@@ -13,7 +13,7 @@ hamburguerMenu.onclick = function(){
   hamburguerMenu.style.display = 'none';
 }
 
-const closeHamburguerMenu = document.querySelector('.close-icon')
+const closeHamburguerMenu = document.querySelector('.close-icon');
 
 closeHamburguerMenu.onclick = function(){
   const flags = document.querySelector('#flags');
@@ -23,7 +23,28 @@ closeHamburguerMenu.onclick = function(){
 
   flags.style.display = 'none';
   header.style.boxShadow = '';
+  header.style.display = '';
   nav.style.display = 'none';
   hamburguerMenu.style.display = 'flex';
   closeHamburguerMenu.style.display = 'none';
 }
+
+window.addEventListener('resize', ()=>{
+  const widthScreen = window.innerWidth;
+  const header = document.querySelector('header');
+  const flags = document.querySelector('#flags');
+  const nav = document.querySelector('nav');
+
+ if(widthScreen > 576){
+    header.style.display = 'flex';
+    hamburguerMenu.style.display = 'none';
+    closeHamburguerMenu.style.display = 'none';
+    flags.style.display = 'flex';
+    nav.style.display = 'flex';
+  } else {
+    hamburguerMenu.style.display = 'flex';
+    flags.style.display = 'none';
+    nav.style.display = 'none';
+    closeHamburguerMenu.style.display = 'none';
+  }
+})
