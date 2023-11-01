@@ -129,7 +129,11 @@
             <img src="../assets/book82.jpg" alt="">
           </div>
           <div class="about-col-2">
-            <p class="aboutme-sub-title">un poco</p>
+            <p class="aboutme-sub-title"
+            data-section="about-me"
+            data-value="sub-title">
+              un poco
+            </p>
             <h2 class="title-aboutme" 
             data-section="about-me"
             data-value="title">
@@ -148,52 +152,19 @@
               <p class="tab-links link-education active-link" 
                  onclick="openTab('educación')" 
                  data-section="about-me"
-                 data-value="sub-title">
+                 data-value="title-link">
                  Educación
               </p>
             </div>
             <div class="tab-content active-tab" 
                  id="educación">
               <ul>
-                <li><span>BootCamp RollingCode School(2022)</span><br>Desarrollador Jr. FullStack</li>
-                <li><span>Instituto Alfredo Coviello(2017-2021)</span><br>Técnico Superior en Administración de Empresas</li>
+                <li data-section="about-me"
+                data-value="title-item"><span>BootCamp RollingCode School(2022)</span><br>Desarrollador Jr. FullStack</li>
+                <li data-section="about-me"
+                data-value="title-item2"><span>Instituto Alfredo Coviello(2017-2021)</span><br>Técnico Superior en Administración de Empresas</li>
               </ul>
             </div>
-            <!-- <div class="tab-content" 
-                 id="experiencia">
-                 <h3>Canales que me ayudaron a aprender</h3>
-                 <ul>
-                    <li>
-                      <a href="">
-                        <span>Midudev</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span>HolaMundo</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span>Soy Dalto</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span>Programador X</span>
-                      </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-content" 
-                 id="canales">
-                 <h4>Algunos canales que me ayudaron a aprender</h4>
-              <ul>
-                <li><span>Midudev</span></li>
-                <li><span>Hola Mundo</span></li>
-                <li><span>Hola soy dalto</span></li>
-              </ul>
-            </div> -->
           </div>
         </div>
     </section>
@@ -316,12 +287,9 @@
           <div class="layer">
             <p class="layer-content1" 
             data-section="projects"
-            data-value="content-layer1">
-              Esta app nació como una oportunidad laboral, para un cliente
-              cercano. Aun estoy trabajando en el con los estilos y
-              agregándoles algunas funcionalidades.
-              Se trata de un e-commerce de electronica con carrito de
-              compras, y formulario de compra.
+            data-value="content-layer3">
+              Mi portfolio web, donde detallo mis habilidades y conocimientos
+              y podrás contactarme.
             <div class="container-icon">
               <a target="_blank" 
                  href="https://tecno-store-eccommerse-app.netlify.app/">
@@ -859,9 +827,6 @@
         </div>
     </section>
     </main>
-    <footer>
-
-    </footer>
     
     <script src="./src/js/arrowUp.js"></script>
     <script src="./src/js/carouselTechnologies.js"></script>
@@ -871,7 +836,6 @@
     <script src="./src/js/lightMode.js"></script>
     <script src="./src/js/modalServices.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./src/js/script.js"></script>
     <script src="./src/js/animationEffect.js"></script>
   </body>
 </html>

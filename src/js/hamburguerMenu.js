@@ -34,6 +34,7 @@ window.addEventListener('resize', ()=>{
   const header = document.querySelector('header');
   const flags = document.querySelector('#flags');
   const nav = document.querySelector('nav');
+  const carousel = document.querySelector('.carousel')
 
  if(widthScreen > 576){
     header.style.display = 'flex';
@@ -41,6 +42,7 @@ window.addEventListener('resize', ()=>{
     closeHamburguerMenu.style.display = 'none';
     flags.style.display = 'flex';
     nav.style.display = 'flex';
+    carousel.style.transform = 'translateX(0%)'
   } else {
     hamburguerMenu.style.display = 'flex';
     flags.style.display = 'none';

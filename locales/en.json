@@ -13,16 +13,19 @@
     },
     "about-me": {
         "title": "About me",
-        "content": "Hello! I'm Luis, a Junior Developer. <br> My primary focus is web development, with a special inclination towards frontend, although I also have knowledge in backend. <br> My favorite technologies for development are HTML, CSS, and React. <br> I consider myself a lifelong learner and a dedicated self-teacher. I love to learn new technologies and stay updated with the latest advancements. <br> Some of my hobbies include reading, training, and sports.",
-        "sub-title": "Education",
-        "sub-title2": "Experience"
+        "sub-title":"a little",
+        "content": "Hello! I'm Luis, a Junior Developer. <br> My primary focus is web development, with a special inclination towards frontend, although I also have knowledge in backend. <br> My favorite technologies for development are HTML, CSS, and React. <br> I love to learn new technologies and stay updated with the latest advancements. <br> Some of my hobbies include reading, outdoor activities, and sports.",
+        "title-link": "Education",
+        "title-item": "<span>BootCamp RollingCode School(2022)</span><br>Jr FullStack Developer.",
+        "title-item2": "<span>Institute Alfredo Coviello(2017-2021)</span><br>Higher technician in business administration"
     },
     "projects":{
         "sub-title": "my",
         "title": "Projects",
         "sub-title2": "If you can imagine it you can program it.",
         "content-layer1": "This app was born as a job opportunity, for a close client. I'm still working on it with the styles and adding some functionality to them. It is an electronics e-commerce with a shopping cart and purchase form.",
-        "content-layer2": "This app was developed as a group, to present as the final project of the RollingCode course. I was in charge of doing the back, and the connection with the front. This is an app for a fast food restaurant."
+        "content-layer2": "This app was developed as a group, to present as the final project of the RollingCode course. I was in charge of doing the back, and the connection with the front. This is an app for a fast food restaurant.",
+        "content-layer3": "My web portfolio, where I detail my skills and knowledge and you can contact me."
     },
     "services":{
         "sub-title": "my",
