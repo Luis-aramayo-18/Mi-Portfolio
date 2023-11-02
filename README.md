@@ -2,14 +2,6 @@
 
 ¡Bienvenido a mi portafolio personal! Aquí encontrarás una colección de mis proyectos de desarrollo web, así como información sobre mí y mis habilidades. 
 
-## Proyectos Destacados
-
-### [ecommerse-electronica]
-Descripción breve del proyecto y sus características. [Enlace al proyecto](URL del proyecto).
-
-### [rolling-restaurant]
-Descripción breve del proyecto y sus características. [Enlace al proyecto](URL del proyecto).
-
 ## Habilidades
 
 - Desarrollo Frontend con React
@@ -22,6 +14,6 @@ Descripción breve del proyecto y sus características. [Enlace al proyecto](URL
 
 ## Contacto
 
-¡Me encantaría conectarte contigo! Puedes encontrarme en [LinkedIn](URL de tu perfil de LinkedIn). También puedes enviarme un correo electrónico a [tu@email.com](mailto:tu@email.com).
+¡Me encantaría conectarte contigo! Puedes enviarme un correo electrónico a luisss.18@hotmail.com
 
 ¡Gracias por visitar mi portafolio!
