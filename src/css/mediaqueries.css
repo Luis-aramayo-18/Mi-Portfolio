@@ -367,6 +367,7 @@
   .skills-col-3{
     width: calc(100% / 3);
     margin: 2.5rem;
+    opacity: 1;
   }
 
   /* --------SERVICES------ */

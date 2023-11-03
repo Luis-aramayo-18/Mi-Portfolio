@@ -673,6 +673,8 @@ position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0 15rem;
 }
 
 .div-text-experience{
@@ -688,8 +690,7 @@ position: relative;
 .carousel-container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 15rem;
+  width: 100%;
 }
 
 .carousel{
@@ -716,6 +717,7 @@ position: relative;
   text-align: center;
   margin: 0;
   width: calc(100% / 3);
+  opacity: 1;
 }
 
 .skills-subtitle{
