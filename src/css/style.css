@@ -686,15 +686,17 @@ position: relative;
 }
 
 .carousel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 15rem;
 }
 
 .carousel{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 300%;
   gap: 2rem;
-  transform: translateX(0%);
   transition: transform 0.5s ease;
 }
 
@@ -713,7 +715,7 @@ position: relative;
   padding: 20px 10px;
   text-align: center;
   margin: 0;
-  width: 33.3%;
+  width: calc(100% / 3);
 }
 
 .skills-subtitle{
