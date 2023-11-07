@@ -146,9 +146,10 @@
   .profile-container{
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 0;
+    padding: 1rem 0;
     margin: 2rem 1rem;
     gap: 10px;
+    height: 80%;
   }
 
   .pic-container{
@@ -167,6 +168,15 @@
 
   .title{
     font-size: 3rem;
+  }
+
+  .btn-cv{
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .icon{
+    font-size: 2.5rem;
   }
 
   /* --------ABOUT ME------ */

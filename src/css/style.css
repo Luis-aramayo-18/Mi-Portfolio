@@ -20,6 +20,8 @@ html {
 :root{
   --body-primary: #141414;
   /* --------------PROFILE----------------- */
+  --background-profile: #000000;
+  --shadow-profile: #ffffff;
   --border: #000000;
   --text-secondary: #ffffff;
   --text-primary: #ffd000;
@@ -91,6 +93,10 @@ html {
 
 .dark-theme{
   transition: background-color 0.7s ease;
+  --background-profile: #ffd000;
+  --shadow-profile: #000000;
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
   /* --------------ABOUT----------------- */
   --body-primary: #ffffffb6;
   --border-about: #ffffff;
@@ -277,10 +283,6 @@ nav{
 /* -------------------------PROFILE------------------- */
 
 #profile {
-  /* background-image: url(../../assets/pexels-pixabay-219692.jpg), none;
-  background-size: cover, auto;
-  background-repeat: no-repeat;
-  background-position: center center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +291,8 @@ nav{
   z-index: 1;
   position: relative;
 
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-profile);
+  transition: background-color 0.7s ease;
 }
 
 .profile-container{
@@ -298,7 +301,7 @@ nav{
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  box-shadow: 0px 4px 8px rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px var(--shadow-profile);
   margin-top: 2rem;
 
   background: rgba( 0, 0, 0, 0.4 );
@@ -307,7 +310,7 @@ backdrop-filter: blur( 2px );
 }
 
 .pic-container{
-  width: 400px;
+  width: 4px;
 }
 
 .img-profile{
