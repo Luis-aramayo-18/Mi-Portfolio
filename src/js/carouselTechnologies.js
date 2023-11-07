@@ -4,7 +4,7 @@ const backButton = document.getElementById('prev-button');
 let position = 0;
 
 function updateCarousel() {
-  const operation = position * -33.3333;
+  const operation = position * -33.333;
   carousel.style.transform = `translateX(${operation}%)`;
 };
 

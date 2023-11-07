@@ -663,18 +663,12 @@ position: relative;
 
 /* -------------------------TECHNOLOGIES------------------- */
 
-.button-carrousel{
-  color: var(--btn-accordion);
-  display: none;
-}
-
 #technologies{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 15rem;
 }
 
 .div-text-experience{
@@ -683,29 +677,26 @@ position: relative;
   padding-top: 2rem;
 }
 
+.div-text-experience h2{
+  font-size: 3rem;
+  font-weight: 400;
+
+  color: var(--text-primary-skills);
+}
+
 .div-text-experience p{
   color: var(--text-secondary-skills);
 }
 
-.carousel-container{
-  display: flex;
-  justify-content: center;
+.carousel-container{  
   width: 100%;
 }
 
 .carousel{
   display: flex;
   justify-content: center;
-  width: 300%;
   gap: 2rem;
-  transition: transform 0.5s ease;
-}
-
-.title-skills{
-  font-size: 3rem;
-  font-weight: 400;
-
-  color: var(--text-primary-skills);
+  margin: 0 15rem;
 }
 
 .skills-col-1, 
@@ -715,9 +706,7 @@ position: relative;
   box-shadow: 0px 4px 8px var(--shadow-skill);
   padding: 20px 10px;
   text-align: center;
-  margin: 0;
-  width: calc(100% / 3);
-  opacity: 1;
+  width: 100%;
 }
 
 .skills-subtitle{
@@ -755,35 +744,6 @@ position: relative;
   color: var(--name-skill);
 }
 
-.skill-progress{
-  border-radius: 5px;
-  width: 100%;
-  height: 7px;
-  background-color: var(--shadow-progress-skill); 
-  margin-top: 1rem;
-}
-
-.progress{
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  background-color: var(--progress-skill);
-  transition: width 1.5s ease-in-out;
-
-  position: static;
-}
-
-.percentage{
-  width: 10%;
-  position: relative;
-  bottom: 20px;
-  left: 95%;
-
-  font-size: 11px;
-  font-weight: 300;
-  color: var(--text-primary-skills);
-}
-
 .icon-skill{
   font-size: 3.5rem;
 }
@@ -794,31 +754,6 @@ position: relative;
   padding: 5px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-}
-
-.skills-article-ring-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
-
-  width: 100%;
-}
-
-.div-ring-container{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.progress-container {
-  position: relative;
-  width: 120px;
-  height: 120px;
 }
 
 /* -------------------------SERVICES------------------- */
