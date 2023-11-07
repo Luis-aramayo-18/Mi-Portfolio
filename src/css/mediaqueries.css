@@ -146,13 +146,14 @@
   .profile-container{
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
     margin: 2rem 1rem;
     gap: 10px;
   }
 
   .pic-container{
-    width: 70%;
+    width: 80%;
+    margin-bottom: 1rem;
   }
 
   .img-profile{
