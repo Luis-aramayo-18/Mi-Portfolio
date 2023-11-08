@@ -410,6 +410,10 @@
     transition: all .5s ease;
   }
 
+  .content-accordion p{
+    font-size: 1rem;
+  }
+
   .accordion .card-accordion.active .content-accordion{
     height: 10em;
   }
