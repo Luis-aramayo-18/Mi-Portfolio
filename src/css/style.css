@@ -25,10 +25,13 @@ html {
   --border: #000000;
   --text-secondary: #ffffff;
   --text-primary: #ffd000;
-  --border-button-cv: #fefefe;
-  --button-cv: #ffffff;
+  --border-button-cv: #ffd000;
+  --button-cv: #ffd000;
   --padding-icons-: #000000;
   --icons-socials: #ffffff;
+  --border-btn-socials: #ffd000;
+  --border-button-cv-hover: #ffffff;
+  --button-cv-hover: #ffffff;
 
   /* --------------ABOUT----------------- */
   --border-about: #000000;
@@ -310,7 +313,7 @@ nav{
 }
 
 .pic-container{
-  width: 380px;
+  width: 350px;
 }
 
 .img-profile{
@@ -354,8 +357,8 @@ nav{
 
 .btn-cv:hover{
   background-color: var(--hover-button-contact);
-  border-color: var(--border-button-cv);
-  color: var(--button-cv);
+  border-color: var(--border-button-cv-hover);
+  color: var(--button-cv-hover);
   transform: translateY(-5px);
   transform: scale(1.1);
 }
@@ -383,7 +386,7 @@ nav{
   background-color: var(--padding-icons-);
   color: var(--icons-socials);
   border-radius: 50%;
-  border: var(--border-button-cv) 0.1rem solid;
+  border: var(--border-btn-socials) 0.1rem solid;
 }
 
 .icon-github{
@@ -391,7 +394,7 @@ nav{
   background-color: var(--padding-icons-);
   color: var(--icons-socials);
   border-radius: 50%;
-  border: var(--border-button-cv) 0.1rem solid;
+  border: var(--border-btn-socials) 0.1rem solid;
 }
 
 .icon-linkedin:hover{
