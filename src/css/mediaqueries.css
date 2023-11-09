@@ -183,6 +183,7 @@
 
   #about-me{
     margin: 2rem 1rem;
+    margin-top: 5rem;
   }
 
   .row{
@@ -208,6 +209,8 @@
 
   .about-col-2{
     gap: 2rem;
+    margin: 0;
+    margin-left: .5rem;
   }
 
   .tab-titles{
