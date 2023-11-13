@@ -944,6 +944,7 @@ position: relative;
 
 .modal-content-text p{
   color: var(--text-modal-content);
+  cursor: default;
 }
 
 .container-check{
